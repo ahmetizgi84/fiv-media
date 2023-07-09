@@ -4,3 +4,23 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+    --c-paleBlack: #1d1d1d;
+    --c-white: #ffffff;
+}
+
+body {
+    font-family: 'Epilogue', sans-serif;
+    background-color: var(--c-paleBlack);
+    color: var(--c-white);
+    overflow-x: hidden;
+}
+
+.stroke {
+    color: transparent;
+    -webkit-text-stroke: 1px #fff;
+}
+
+.marquee {
+    overflow-x: hidden;
+}
