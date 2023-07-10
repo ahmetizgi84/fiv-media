@@ -44,7 +44,7 @@ function Hero() {
         </div>
       </div>
 
-      <div className="absolute left-0 top-0 w-full h-full bg-[url('src/assets/graph.png')] bg-cover bg-no-repeat" />
+      <div className="absolute left-0 top-0 w-full h-full bg-[url('./src/assets/graph.png')] bg-cover bg-no-repeat" />
     </div>
   );
 }
