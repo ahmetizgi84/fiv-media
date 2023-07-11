@@ -1,9 +1,23 @@
 import Marquee from 'react-fast-marquee';
 import { Link } from 'react-router-dom';
+import Slider from 'react-slick';
 
 import MainLayout from '@/layouts/MainLayout';
 
 const solutions = ['Mobile Solutions', 'UI-UX Experience', 'Web Development', 'Digital Marketing', 'Product Design'];
+
+const settings = {
+  infinite: true,
+  speed: 3500,
+  autoplay: true,
+  autoplaySpeed: 4000,
+  slidesToShow: 2,
+  slidesToScroll: 1,
+  dots: false,
+  arrows: false,
+  pauseOnHover: true,
+  centerMode: false
+};
 
 const Home = () => {
   return (
@@ -17,6 +31,10 @@ const Home = () => {
       <MarqueText />
 
       <OurServices />
+
+      <Works />
+
+      <Services />
     </MainLayout>
   );
 };
@@ -117,7 +135,7 @@ function Revenue() {
 function MarqueText() {
   return (
     <div>
-      <div className="border border-gray-500 -rotate-3 py-[50px] w-[110%] -ml-5 bg-[#1d1d1d]">
+      <div className="border border-white/[0.1] -rotate-3 py-[50px] w-[110%] -ml-5 bg-[#1d1d1d]">
         <Marquee>
           {solutions.map(solution => (
             <div className="px-8" key={solution}>
@@ -130,7 +148,7 @@ function MarqueText() {
         </Marquee>
       </div>
 
-      <div className="border border-gray-500 py-[70px] w-[110%] -ml-5">
+      <div className="border border-white/[0.1] py-[70px] w-[110%] -ml-5">
         <div className="max-w-7xl mx-auto px-4 flex justify-evenly">
           <h2>HUQS</h2>
           <h2>WASP</h2>
@@ -260,6 +278,93 @@ function OurServices() {
               </svg>
             </a>
           </div>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+function Works() {
+  return (
+    <div className="pt-[120px]">
+      <Slider {...settings}>
+        <SimpleCard />
+        <SimpleCard />
+        <SimpleCard />
+        <SimpleCard />
+        <SimpleCard />
+        <SimpleCard />
+        <SimpleCard />
+        <SimpleCard />
+        <SimpleCard />
+      </Slider>
+    </div>
+  );
+}
+
+function SimpleCard() {
+  return (
+    <div className="mt-8 flex h-full flex-1 justify-end items-center mr-20">
+      <div className="w-[42vw] relative">
+        <div className="">
+          <img src="images/02.jpg" alt="" className="w-full h-auto align-middle" />
+        </div>
+        <div className="flex items-end mt-8">
+          <div>
+            <span className="text-sm font-medium uppercase tracking-wider opacity-75 inline-block">Web Design</span>
+            <h5 className="font-semibold mb-1 text-2xl">Mobile Software</h5>
+          </div>
+          <div className="ml-auto">
+            <h6 className="text-xl font-medium">2023</h6>
+          </div>
+        </div>
+        <a href="#0" className="absolute top-0 left-0 w-full h-full inline-block"></a>
+      </div>
+    </div>
+  );
+}
+
+function Services() {
+  return (
+    <div className="max-w-7xl mx-auto px-4 flex py-[120px]">
+      <div className="basis-1/2">
+        <div className="flex-1 mb-20">
+          <h6 className="py-2 px-14 text-xs uppercase tracking-[1px] rounded-3xl border inline-block border-gray-400 mb-4">
+            services
+          </h6>
+          <p className="text-base font-light text-gray-300">
+            We help you to go online and increase your conversion rate Better design for your digital products.
+          </p>
+        </div>
+        {/*  */}
+
+        <ul>
+          <li
+            className="text-4xl font-medium cursor-pointer pb-5 mb-5 border-b-[1px] border-white/[0.05]"
+            data-tab="tabs-1">
+            <span className="text-xl mr-8 inline-block">01</span> UI/UX Design
+          </li>
+          <li
+            className="text-4xl font-medium cursor-pointer pb-5 mb-5 border-b-[1px] border-white/[0.05]"
+            data-tab="tabs-2">
+            <span className="text-xl mr-8 inline-block">02</span> Branding
+          </li>
+          <li
+            className="text-4xl font-medium cursor-pointer pb-5 mb-5 border-b-[1px] border-white/[0.05]"
+            data-tab="tabs-3">
+            <span className="text-xl mr-8 inline-block">03</span> Development
+          </li>
+          <li
+            className="text-4xl font-medium cursor-pointer pb-5 mb-5 border-b-[1px] border-white/[0.05]"
+            data-tab="tabs-4">
+            <span className="text-xl mr-8 inline-block">04</span> Marketing
+          </li>
+        </ul>
+      </div>
+
+      <div className="basis-1/2 flex justify-end">
+        <div className="w-[70%]">
+          <img src="/images/4.jpg" alt="fiv-media hero" className="w-full h-full object-cover" />
         </div>
       </div>
     </div>
