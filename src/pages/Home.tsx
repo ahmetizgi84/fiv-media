@@ -32,7 +32,7 @@ export default Home;
 
 function Hero() {
   return (
-    <div className="relative pt-32">
+    <section className="relative pt-32">
       <div className="max-w-7xl mx-auto px-4">
         <h1 className="text-8xl font-bold tracking-[2px] leading-[7rem]">
           HIGH END <br /> <span className="stroke">CREATIVE</span> AGENCY
@@ -52,13 +52,13 @@ function Hero() {
       </div>
 
       <div className="absolute left-0 top-0 w-full h-full bg-[url('assets/graph.png')] bg-cover bg-no-repeat" />
-    </div>
+    </section>
   );
 }
 
 function Benefits() {
   return (
-    <div className="max-w-7xl mx-auto px-4 flex pt-[120px]">
+    <section className="max-w-7xl mx-auto px-4 flex pt-[120px]">
       <div className="basis-1/2">
         <h6 className="py-2 px-14 text-xs uppercase tracking-[1px] rounded-3xl border inline-block border-gray-400 mb-4">
           our benefits
@@ -76,13 +76,13 @@ function Benefits() {
           <Link to="#">View All Our News</Link>
         </button>
       </div>
-    </div>
+    </section>
   );
 }
 
 function Revenue() {
   return (
-    <div className="max-w-7xl mx-auto px-4 flex py-[120px]">
+    <section className="max-w-7xl mx-auto px-4 flex py-[120px]">
       <div className="basis-1/2 mx-auto">
         <div className="w-[70%]">
           <img src="/images/01.jpg" alt="fiv-media hero" className="w-full h-full object-cover" />
@@ -117,13 +117,13 @@ function Revenue() {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 }
 
 function MarqueText() {
   return (
-    <div>
+    <section>
       <div className="border border-white/[0.1] -rotate-3 py-[50px] w-[110%] -ml-5 bg-[#1d1d1d]">
         <Marquee>
           {solutions.map(solution => (
@@ -146,13 +146,13 @@ function MarqueText() {
           <h2>GNOSIS</h2>
         </div>
       </div>
-    </div>
+    </section>
   );
 }
 
 function OurServices() {
   return (
-    <div className="max-w-7xl mx-auto px-4">
+    <section className="max-w-7xl mx-auto px-4">
       <div className="flex pt-[120px] mb-[80px]">
         <div className="flex-1">
           <h6 className="py-2 px-14 text-xs uppercase tracking-[1px] rounded-3xl border inline-block border-gray-400 mb-4">
@@ -269,13 +269,13 @@ function OurServices() {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 }
 
 function Works() {
   return (
-    <div className="pt-[120px]">
+    <section className="pt-[120px]">
       <Slider {...firstSettings}>
         <SimpleCard />
         <SimpleCard />
@@ -287,7 +287,7 @@ function Works() {
         <SimpleCard />
         <SimpleCard />
       </Slider>
-    </div>
+    </section>
   );
 }
 
@@ -315,7 +315,7 @@ function SimpleCard() {
 
 function Services() {
   return (
-    <div className="max-w-7xl mx-auto px-4 flex py-[120px]">
+    <section className="max-w-7xl mx-auto px-4 flex py-[120px]">
       <div className="basis-1/2">
         <div className="flex-1 mb-20">
           <h6 className="py-2 px-14 text-xs uppercase tracking-[1px] rounded-3xl border inline-block border-gray-400 mb-4">
@@ -356,13 +356,13 @@ function Services() {
           <img src="/images/4.jpg" alt="fiv-media hero" className="w-full h-full object-cover" />
         </div>
       </div>
-    </div>
+    </section>
   );
 }
 
 function PeopleSay() {
   return (
-    <div className="py-[120px] flex mx-auto bg-[#1a1a1a]">
+    <section className="py-[120px] flex mx-auto bg-[#1a1a1a]">
       <div className="max-w-7xl mx-auto px-4">
         <div className="text-center mb-20">
           <h6 className="py-2 px-14 text-xs uppercase tracking-[1px] rounded-3xl border inline-block border-gray-400 mb-4">
@@ -388,7 +388,7 @@ function PeopleSay() {
           <div className="flex-[0.5] max-w-[50%]">
             <Slider {...secondSettings}>
               {testimonials.map(test => (
-                <Testimonial key={test.id} test={test} />
+                <TestimonialCard key={test.id} test={test} />
               ))}
             </Slider>
           </div>
@@ -431,11 +431,11 @@ function PeopleSay() {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 }
 
-function Testimonial({ test }: { test: any }) {
+function TestimonialCard({ test }: { test: any }) {
   return (
     <div>
       <div className="mb-10">
