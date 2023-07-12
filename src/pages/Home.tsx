@@ -3,21 +3,8 @@ import { Link } from 'react-router-dom';
 import Slider from 'react-slick';
 
 import MainLayout from '@/layouts/MainLayout';
-
-const solutions = ['Mobile Solutions', 'UI-UX Experience', 'Web Development', 'Digital Marketing', 'Product Design'];
-
-const settings = {
-  infinite: true,
-  speed: 3500,
-  autoplay: true,
-  autoplaySpeed: 4000,
-  slidesToShow: 2,
-  slidesToScroll: 1,
-  dots: false,
-  arrows: false,
-  pauseOnHover: true,
-  centerMode: false
-};
+import { StarFill } from 'react-bootstrap-icons';
+import { firstSettings, secondSettings, solutions, testimonials } from '@/constants';
 
 const Home = () => {
   return (
@@ -35,6 +22,8 @@ const Home = () => {
       <Works />
 
       <Services />
+
+      <PeopleSay />
     </MainLayout>
   );
 };
@@ -287,7 +276,7 @@ function OurServices() {
 function Works() {
   return (
     <div className="pt-[120px]">
-      <Slider {...settings}>
+      <Slider {...firstSettings}>
         <SimpleCard />
         <SimpleCard />
         <SimpleCard />
@@ -365,6 +354,113 @@ function Services() {
       <div className="basis-1/2 flex justify-end">
         <div className="w-[70%]">
           <img src="/images/4.jpg" alt="fiv-media hero" className="w-full h-full object-cover" />
+        </div>
+      </div>
+    </div>
+  );
+}
+
+function PeopleSay() {
+  return (
+    <div className="py-[120px] flex mx-auto bg-[#1a1a1a]">
+      <div className="max-w-7xl mx-auto px-4">
+        <div className="text-center mb-20">
+          <h6 className="py-2 px-14 text-xs uppercase tracking-[1px] rounded-3xl border inline-block border-gray-400 mb-4">
+            testimonials
+          </h6>
+          <h2 className="text-5xl font-semibold">What People Says?</h2>
+        </div>
+
+        {/*  */}
+        <div className="flex items-center gap-6">
+          <div className="relative flex-[0.5]">
+            <div className="border border-white/[0.5] w-80 h-80 rounded-full overflow-hidden items-center justify-center flex">
+              <div className="w-36 h-36 rounded-full p-10 relative z-10 bg-[#1d1d1d]">
+                <img src="/images/quote.png" alt="" className="w-full h-auto align-middle" />
+              </div>
+            </div>
+            <div className="absolute top-0 left-1/4 w-80 h-80 rounded-full overflow-hidden">
+              <img src="/images/sq1.jpg" alt="" className="w-full h-full object-cover object-center align-middle" />
+            </div>
+          </div>
+
+          {/* ITEM */}
+          <div className="flex-[0.5] max-w-[50%]">
+            <Slider {...secondSettings}>
+              {testimonials.map(test => (
+                <Testimonial key={test.id} test={test} />
+              ))}
+            </Slider>
+          </div>
+        </div>
+
+        {/*  */}
+        <div className="pt-20 mt-80 border-t-[1px] border-t-white/[0.05]">
+          <div className="flex flex-wrap">
+            <div className="flex-[25%]">
+              <div>
+                <h2 className="text-9xl font-extrabold text-transparent stroke">16</h2>
+                <h6 className="text-base font-medium">Years of Experience</h6>
+              </div>
+            </div>
+
+            <div className="flex-[25%] flex justify-around">
+              <div>
+                <h2 className="text-9xl font-extrabold">
+                  4<span className="fz-80 fw-600">k</span>
+                </h2>
+                <h6 className="text-base font-medium">Projects Complated</h6>
+              </div>
+            </div>
+
+            <div className="flex-[25%] flex justify-around">
+              <div>
+                <h2 className="text-9xl font-extrabold text-transparent stroke">
+                  9<span className="text-8xl font-semibold inline-block">k</span>
+                </h2>
+                <h6 className="text-base font-medium">Happy Customers</h6>
+              </div>
+            </div>
+
+            <div className="flex-[25%] flex">
+              <div className="ml-auto">
+                <h2 className="text-9xl font-extrabold">12</h2>
+                <h6 className="text-base font-medium">Awards Winning</h6>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+function Testimonial({ test }: { test: any }) {
+  return (
+    <div>
+      <div className="mb-10">
+        <div className="mb-5 text-base">
+          <span className="flex gap-1">
+            <StarFill color="#ffaa17" />
+            <StarFill color="#ffaa17" />
+            <StarFill color="#ffaa17" />
+            <StarFill color="#ffaa17" />
+            <StarFill color="#ffaa17" />
+          </span>
+        </div>
+        <h5 className="font-normal text-2xl">{test.desc}</h5>
+      </div>
+      <div className="flex items-center">
+        <div>
+          <div className="w-16 h-16 rounded-full overflow-hidden">
+            <img src={test.img} alt="" className="w-full h-full object-cover object-center align-middle" />
+          </div>
+        </div>
+        <div className="ml-8">
+          <div className="info">
+            <h6 className="text-base font-medium">{test.name}</h6>
+            <span className="text-sm font-light uppercase tracking-widest opacity-70 inline-block">{test.pos}</span>
+          </div>
         </div>
       </div>
     </div>
