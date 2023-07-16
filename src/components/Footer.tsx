@@ -6,15 +6,13 @@ const Footer = () => {
       <div className="footer-container">
         <div className="max-w-7xl mx-auto py-20 relative z-[7]">
           <div className="p-[20px] border border-white/[0.1] rounded-xl mb-[80px] text-center">
-            <h2 className="text-[80px] font-[600]">
+            <h2 className="md:text-[80px] text-[40px]  font-[600]">
               <a href="page-contact.html" className="inline-block decoration-none">
                 Let's <span className="stroke"> Discuss</span>
               </a>
-              <span className="inline-block">
+              <span className="md:inline-block flex justify-center">
                 <svg
-                  width="80"
-                  height="80"
-                  className="align-middle"
+                  className="align-middle md:w-[80px] md:h-[80px] h-[40px] w-[40px]"
                   viewBox="0 0 18 18"
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg">
@@ -26,7 +24,7 @@ const Footer = () => {
             </h2>
           </div>
           <div className="flex flex-wrap">
-            <div className="w-[25%] px-[15px]">
+            <div className="md:w-[25%] w-full px-[15px] mb-12 md:mb-0">
               <div className="colum md-mb50">
                 <div className="mb-[20px]">
                   <h6 className="text-[20px] font-[500]">Address</h6>
@@ -38,7 +36,7 @@ const Footer = () => {
                 </div>
               </div>
             </div>
-            <div className="w-[25%] px-[15px] ml-[8.3%]">
+            <div className="md:w-[25%] w-full px-[15px] mb-12 md:mb-0 md:ml-[8.3%]">
               <div className="colum md-mb50">
                 <div className="mb-[20px]">
                   <h6 className="text-[20px] font-[500]">Say Hello</h6>
@@ -55,7 +53,7 @@ const Footer = () => {
                 </div>
               </div>
             </div>
-            <div className="w-[16.6%] px-[15px]">
+            <div className="md:w-[16.6%] w-full px-[15px] mb-12 md:mb-0">
               <div className="mb-[20px]">
                 <h6 className="text-[20px] font-[500]">Social</h6>
               </div>
@@ -82,7 +80,7 @@ const Footer = () => {
                 </li>
               </ul>
             </div>
-            <div className="w-[25%] px-[15px]">
+            <div className="md:w-[25%] w-full px-[15px]">
               <div className="mb-[20px]">
                 <h6 className="text-[20px] font-[500]">Newsletter</h6>
               </div>
@@ -105,15 +103,13 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <div className="py-[40px] border-t border-t-white/[0.05] relative z-[7]">
+
+        <div className="py-[40px] border-t px-4 border-t-white/[0.05] relative z-[7]">
           <div className="max-w-7xl mx-auto">
             <div className="flex flex-wrap justify-between">
               <div className="col-lg-4">
                 <div className="logo">
-                  <a href="#">
-                    {/* <img src="assets/imgs/logo-light.png" alt="" /> */}
-                    FivMedia
-                  </a>
+                  <a href="#">FivMedia</a>
                 </div>
               </div>
               <div className="col-lg-8">

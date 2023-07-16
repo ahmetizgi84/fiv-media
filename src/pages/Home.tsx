@@ -10,19 +10,12 @@ const Home = () => {
   return (
     <MainLayout>
       <Hero />
-
       <Benefits />
-
       <Revenue />
-
       <MarqueText />
-
       <OurServices />
-
       <Works />
-
       <Services />
-
       <PeopleSay />
     </MainLayout>
   );
@@ -34,36 +27,36 @@ function Hero() {
   return (
     <section className="relative pt-32">
       <div className="max-w-7xl mx-auto px-4">
-        <h1 className="text-8xl font-bold tracking-[2px] leading-[7rem]">
+        <h1 className="md:text-8xl text-[35px] font-bold tracking-[2px] md:leading-[7rem]">
           HIGH END <br /> <span className="stroke">CREATIVE</span> AGENCY
         </h1>
       </div>
 
-      <div className="flex px-4 justify-end mt-6">
-        <div className="max-w-sm">
+      <div className="md:flex justify-end mt-6">
+        <div className="max-w-sm px-4">
           <p className="text-base font-light text-gray-300">
             Through our years of experience, we've also learned that while each channel has its own set of advantages.
           </p>
         </div>
 
-        <div className="h-[400px] w-[60%] ">
-          <img src="/images/14.jpg" alt="fiv-media hero" className="w-full h-full object-cover" />
+        <div className="md:h-[400px] md:w-[60%] mt-12 md:mt-0">
+          <img src="/images/14.jpg" alt="fiv-media hero" className="w-full h-full object-cover object-center" />
         </div>
       </div>
 
-      <div className="absolute left-0 top-0 w-full h-full bg-[url('assets/graph.png')] bg-cover bg-no-repeat" />
+      <div className="absolute left-0 top-0 -z-1 w-full h-full bg-[url('assets/graph.png')] bg-cover bg-no-repeat" />
     </section>
   );
 }
 
 function Benefits() {
   return (
-    <section className="max-w-7xl mx-auto px-4 flex pt-[120px]">
-      <div className="basis-1/2">
+    <section className="max-w-7xl mx-auto px-4 md:flex pt-[120px]">
+      <div className="basis-1/2 mb-7 md:mb-0">
         <h6 className="py-2 px-14 text-xs uppercase tracking-[1px] rounded-3xl border inline-block border-gray-400 mb-4">
           our benefits
         </h6>
-        <h2 className="text-5xl font-semibold">Our Team of Dedicated Digital Professionals.</h2>
+        <h2 className="md:text-5xl text-[28px] font-semibold">Our Team of Dedicated Digital Professionals.</h2>
       </div>
 
       <div className="basis-1/3 mx-auto">
@@ -82,14 +75,14 @@ function Benefits() {
 
 function Revenue() {
   return (
-    <section className="max-w-7xl mx-auto px-4 flex py-[120px]">
-      <div className="basis-1/2 mx-auto">
-        <div className="w-[70%]">
+    <section className="max-w-7xl mx-auto px-4 md:flex py-[120px]">
+      <div className="basis-1/2 mx-auto mb-12 md:mb-0">
+        <div className="w-full md:w-[70%] ">
           <img src="/images/01.jpg" alt="fiv-media hero" className="w-full h-full object-cover" />
         </div>
       </div>
       <div className="basis-1/2">
-        <h2 className="text-5xl font-semibold">Unlock Revenue Growth for Your Business.</h2>
+        <h2 className="md:text-5xl text-[28px] font-semibold">Unlock Revenue Growth for Your Business.</h2>
 
         <div className="flex items-center mt-20">
           <div className="w-[70px]">
@@ -128,7 +121,7 @@ function MarqueText() {
         <Marquee>
           {solutions.map(solution => (
             <div className="px-8" key={solution}>
-              <h4 className="flex items-center text-7xl font-semibold">
+              <h4 className="flex items-center md:text-7xl text-4xl font-semibold">
                 <span>{solution}</span>
                 <span className="ml-[50px] text-5xl">*</span>
               </h4>
@@ -153,12 +146,12 @@ function MarqueText() {
 function OurServices() {
   return (
     <section className="max-w-7xl mx-auto px-4">
-      <div className="flex pt-[120px] mb-[80px]">
+      <div className="md:flex pt-[120px] mb-[80px]">
         <div className="flex-1">
           <h6 className="py-2 px-14 text-xs uppercase tracking-[1px] rounded-3xl border inline-block border-gray-400 mb-4">
             featured services
           </h6>
-          <h2 className="text-5xl font-semibold">Our Services.</h2>
+          <h2 className="md:text-5xl text-[28px] font-semibold">Our Services.</h2>
         </div>
 
         <div className="basis-1/3 mx-auto">
@@ -172,9 +165,9 @@ function OurServices() {
         </div>
       </div>
 
-      <div className="flex gap-8">
+      <div className="flex flex-col md:flex-row gap-8">
         {/* CARD 1 */}
-        <div className="flex-1 border border-white/[0.1] p-14">
+        <div className="flex-1 border border-white/[0.1] md:p-14 p-8">
           <div className="w-12 mb-10">
             <img src="/images/0.png" alt="" className="w-full h-full object-cover align-middle" />
           </div>
@@ -206,7 +199,7 @@ function OurServices() {
         </div>
 
         {/* CARD 2 */}
-        <div className="flex-1 border  border-white/[0.1] p-14">
+        <div className="flex-1 border  border-white/[0.1] md:p-14 p-8">
           <div className="w-12 mb-10">
             <img src="/images/1.png" alt="" className="w-full h-full object-cover align-middle" />
           </div>
@@ -238,7 +231,7 @@ function OurServices() {
         </div>
 
         {/* CARD 3 */}
-        <div className="flex-1 border  border-white/[0.1] p-14">
+        <div className="flex-1 border  border-white/[0.1] md:p-14 p-8">
           <div className="w-12 mb-10">
             <img src="/images/2.png" alt="" className="w-full h-full object-cover align-middle" />
           </div>
@@ -293,18 +286,18 @@ function Works() {
 
 function SimpleCard() {
   return (
-    <div className="mt-8 flex h-full flex-1 justify-end items-center mr-20">
-      <div className="w-[42vw] relative">
+    <div className="mt-8 flex h-full flex-1 justify-end items-center w-full md:mr-20">
+      <div className="md:w-[42vw] w-full relative">
         <div className="">
           <img src="images/02.jpg" alt="" className="w-full h-auto align-middle" />
         </div>
         <div className="flex items-end mt-8">
           <div>
             <span className="text-sm font-medium uppercase tracking-wider opacity-75 inline-block">Web Design</span>
-            <h5 className="font-semibold mb-1 text-2xl">Mobile Software</h5>
+            <h5 className="font-semibold md:mb-1 md:text-2xl text-[18px]">Mobile Software</h5>
           </div>
           <div className="ml-auto">
-            <h6 className="text-xl font-medium">2023</h6>
+            <h6 className="md:text-xl text-base font-medium">2023</h6>
           </div>
         </div>
         <a href="#0" className="absolute top-0 left-0 w-full h-full inline-block"></a>
@@ -315,8 +308,8 @@ function SimpleCard() {
 
 function Services() {
   return (
-    <section className="max-w-7xl mx-auto px-4 flex py-[120px]">
-      <div className="basis-1/2">
+    <section className="max-w-7xl mx-auto md:flex py-[120px]">
+      <div className="basis-1/2 px-4">
         <div className="flex-1 mb-20">
           <h6 className="py-2 px-14 text-xs uppercase tracking-[1px] rounded-3xl border inline-block border-gray-400 mb-4">
             services
@@ -352,7 +345,7 @@ function Services() {
       </div>
 
       <div className="basis-1/2 flex justify-end">
-        <div className="w-[70%]">
+        <div className="md:w-[70%] w-full">
           <img src="/images/4.jpg" alt="fiv-media hero" className="w-full h-full object-cover" />
         </div>
       </div>
@@ -362,7 +355,7 @@ function Services() {
 
 function PeopleSay() {
   return (
-    <section className="py-[120px] flex mx-auto bg-[#1a1a1a]">
+    <section className="py-[120px] md:flex mx-auto bg-[#1a1a1a]">
       <div className="max-w-7xl mx-auto px-4">
         <div className="text-center mb-20">
           <h6 className="py-2 px-14 text-xs uppercase tracking-[1px] rounded-3xl border inline-block border-gray-400 mb-4">
@@ -372,20 +365,20 @@ function PeopleSay() {
         </div>
 
         {/*  */}
-        <div className="flex items-center gap-6">
-          <div className="relative flex-[0.5]">
-            <div className="border border-white/[0.5] w-80 h-80 rounded-full overflow-hidden items-center justify-center flex">
+        <div className="md:flex items-center gap-6">
+          <div className="relative flex-[0.5] ml-16 md:ml-0 mb-8 md:mb-0 ">
+            <div className="border border-white/[0.5] md:w-80 md:h-80 h-36 w-36 rounded-full overflow-hidden items-center justify-center flex">
               <div className="w-36 h-36 rounded-full p-10 relative z-10 bg-[#1d1d1d]">
                 <img src="/images/quote.png" alt="" className="w-full h-auto align-middle" />
               </div>
             </div>
-            <div className="absolute top-0 left-1/4 w-80 h-80 rounded-full overflow-hidden">
+            <div className="absolute top-0 left-1/4 md:w-80 md:h-80 w-36 h-36 rounded-full overflow-hidden">
               <img src="/images/sq1.jpg" alt="" className="w-full h-full object-cover object-center align-middle" />
             </div>
           </div>
 
           {/* ITEM */}
-          <div className="flex-[0.5] max-w-[50%]">
+          <div className="flex-[0.5] md:max-w-[50%]">
             <Slider {...secondSettings}>
               {testimonials.map(test => (
                 <TestimonialCard key={test.id} test={test} />
@@ -395,36 +388,38 @@ function PeopleSay() {
         </div>
 
         {/*  */}
-        <div className="pt-20 mt-80 border-t-[1px] border-t-white/[0.05]">
+        <div className="pt-20 mt-20 border-t-[1px] border-t-white/[0.05]">
           <div className="flex flex-wrap">
-            <div className="flex-[25%]">
+            <div className="md:flex-[25%] flex-[100%] mb-12 md:mb-0">
               <div>
-                <h2 className="text-9xl font-extrabold text-transparent stroke">16</h2>
+                <h2 className="md:text-9xl text-8xl font-extrabold text-transparent stroke">16</h2>
                 <h6 className="text-base font-medium">Years of Experience</h6>
               </div>
             </div>
 
-            <div className="flex-[25%] flex justify-around">
+            <div className="md:flex-[25%] flex-[100%] mb-12 md:mb-0 md:flex md:justify-around">
               <div>
-                <h2 className="text-9xl font-extrabold">
+                <h2 className="md:text-9xl text-8xl font-extrabold">
                   4<span className="fz-80 fw-600">k</span>
                 </h2>
                 <h6 className="text-base font-medium">Projects Complated</h6>
               </div>
             </div>
 
-            <div className="flex-[25%] flex justify-around">
+            <div className="md:flex-[25%] flex-[100%] mb-12 md:mb-0 md:flex md:justify-around">
               <div>
-                <h2 className="text-9xl font-extrabold text-transparent stroke">
+                <h2 className="md:text-9xl text-8xl font-extrabold text-transparent stroke">
                   9<span className="text-8xl font-semibold inline-block">k</span>
                 </h2>
                 <h6 className="text-base font-medium">Happy Customers</h6>
               </div>
             </div>
 
-            <div className="flex-[25%] flex">
-              <div className="ml-auto">
-                <h2 className="text-9xl font-extrabold">12</h2>
+            <div className="md:flex-[25%] flex-[100%]  flex">
+              <div className="md:ml-auto">
+                <h2 className="md:text-9xl text-8xl font-extrabold">
+                  12<span className="fz-80 fw-600">k</span>
+                </h2>
                 <h6 className="text-base font-medium">Awards Winning</h6>
               </div>
             </div>
@@ -448,7 +443,7 @@ function TestimonialCard({ test }: { test: any }) {
             <StarFill color="#ffaa17" />
           </span>
         </div>
-        <h5 className="font-normal text-2xl">{test.desc}</h5>
+        <h5 className="font-normal md:text-2xl text-[18px] ">{test.desc}</h5>
       </div>
       <div className="flex items-center">
         <div>

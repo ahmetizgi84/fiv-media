@@ -8,7 +8,33 @@ export const firstSettings = {
   dots: false,
   arrows: false,
   pauseOnHover: true,
-  centerMode: false
+  centerMode: false,
+  responsive: [
+    // {
+    //   breakpoint: 1400,
+    //   settings: {
+    //     slidesToShow: 3,
+    //     slidesToScroll: 1,
+    //     centerMode: true
+    //   }
+    // },
+    // {
+    //   breakpoint: 991,
+    //   settings: {
+    //     slidesToShow: 2,
+    //     slidesToScroll: 1,
+    //     centerMode: true
+    //   }
+    // },
+    {
+      breakpoint: 576,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        centerMode: false
+      }
+    }
+  ]
 };
 
 export const secondSettings = {

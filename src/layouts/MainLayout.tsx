@@ -7,11 +7,11 @@ interface Props {
 
 const MainLayout: FC<Props> = ({ children }) => {
   return (
-    <div className="">
+    <>
       <Navbar />
       {children}
       <Footer />
-    </div>
+    </>
   );
 };
 
