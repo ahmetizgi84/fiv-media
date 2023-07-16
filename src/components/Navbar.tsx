@@ -1,14 +1,16 @@
 import { List } from 'react-bootstrap-icons';
 import { Link } from 'react-router-dom';
 
-const menuItems = ['home', 'pages', 'portfolio', 'blogs', 'shop', 'contact'];
+const menuItems = ['about', 'contact', 'products', 'shop'];
 
 const Navbar = () => {
   return (
     <div className="shadow-md w-full">
       <div className="max-w-7xl mx-auto px-4">
         <div className="flex justify-between items-center py-6">
-          <p className="m-0 text-xl font-bold">FivMedia</p>
+          <Link to="/">
+            <p className="m-0 text-xl font-bold">FivMedia</p>
+          </Link>
           <ul className="hidden md:flex items-center m-0 uppercase">
             {menuItems.map(menuItem => (
               <li key={menuItem}>

@@ -2,13 +2,12 @@ import Marquee from 'react-fast-marquee';
 import { Link } from 'react-router-dom';
 import Slider from 'react-slick';
 
-import MainLayout from '@/layouts/MainLayout';
 import { StarFill } from 'react-bootstrap-icons';
 import { firstSettings, secondSettings, solutions, testimonials } from '@/constants';
 
 const Home = () => {
   return (
-    <MainLayout>
+    <>
       <Hero />
       <Benefits />
       <Revenue />
@@ -17,7 +16,7 @@ const Home = () => {
       <Works />
       <Services />
       <PeopleSay />
-    </MainLayout>
+    </>
   );
 };
 
