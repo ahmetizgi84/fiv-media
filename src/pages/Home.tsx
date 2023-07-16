@@ -405,7 +405,7 @@ function PeopleSay() {
               </div>
             </div>
 
-            <div className="md:flex-[25%] flex-[100%] mb-12 md:mb-0 md:flex md:justify-around">
+            <div className="md:flex-[25%] flex-[100%] mb-12 md:mb-0 md:flex md:justify-end">
               <div>
                 <h2 className="md:text-9xl text-8xl font-extrabold text-transparent stroke">
                   9<span className="text-8xl font-semibold inline-block">k</span>
@@ -414,11 +414,9 @@ function PeopleSay() {
               </div>
             </div>
 
-            <div className="md:flex-[25%] flex-[100%]  flex">
+            <div className="md:flex-[25%] flex-[100%] flex">
               <div className="md:ml-auto">
-                <h2 className="md:text-9xl text-8xl font-extrabold">
-                  12<span className="fz-80 fw-600">k</span>
-                </h2>
+                <h2 className="md:text-9xl text-8xl font-extrabold">12</h2>
                 <h6 className="text-base font-medium">Awards Winning</h6>
               </div>
             </div>
