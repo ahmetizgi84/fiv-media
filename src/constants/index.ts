@@ -51,11 +51,14 @@ export const secondSettings = {
 };
 
 export const solutions = [
-  'Mobile Solutions',
-  'UI-UX Experience',
-  'Web Development',
-  'Digital Marketing',
-  'Product Design'
+  'Websites/Logos/App Development',
+  'Short Advertisement Movies',
+  'Video Cutting',
+  'Animations',
+  'SMM',
+  'Content Creation',
+  'Seo/Ads',
+  'Fair Stand Organizations'
 ];
 
 export const testimonials = [
