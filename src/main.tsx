@@ -9,6 +9,7 @@ import './index.css';
 
 import Home from './pages/Home';
 import MainLayout from './layouts/MainLayout';
+import Contact from './pages/Contact';
 
 const router = createBrowserRouter([
   {
@@ -25,7 +26,7 @@ const router = createBrowserRouter([
       },
       {
         path: '/contact',
-        element: <div>Contact</div>
+        element: <Contact />
       },
       {
         path: '/products',
