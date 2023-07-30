@@ -14,20 +14,20 @@ const itemVariants: Variants = {
   visible
 };
 
-const cardVariants: Variants = {
-  offscreen: {
-    y: 300
-  },
-  onscreen: {
-    y: 50,
-    rotate: 0,
-    transition: {
-      type: 'spring',
-      bounce: 0.4,
-      duration: 0.8
-    }
-  }
-};
+// const cardVariants: Variants = {
+//   offscreen: {
+//     y: 300
+//   },
+//   onscreen: {
+//     y: 50,
+//     rotate: 0,
+//     transition: {
+//       type: 'spring',
+//       bounce: 0.4,
+//       duration: 0.8
+//     }
+//   }
+// };
 
 const Home = () => {
   return (
