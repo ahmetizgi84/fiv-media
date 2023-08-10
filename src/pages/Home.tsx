@@ -6,7 +6,7 @@ import { ArrowRightShort } from 'react-bootstrap-icons';
 
 import { StarFill } from 'react-bootstrap-icons';
 import { firstSettings, secondSettings, solutions, testimonials } from '@/constants';
-import { useTranslation } from 'react-i18next';
+// import { useTranslation } from 'react-i18next';
 
 const visible = { opacity: 1, y: 0, transition: { duration: 0.5 } };
 
@@ -49,7 +49,7 @@ const Home = () => {
 export default Home;
 
 function Hero() {
-  const { t } = useTranslation();
+  // const { t } = useTranslation();
 
   return (
     <motion.section
