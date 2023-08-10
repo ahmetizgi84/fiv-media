@@ -10,6 +10,7 @@ import './index.css';
 import Home from './pages/Home';
 import MainLayout from './layouts/MainLayout';
 import Contact from './pages/Contact';
+import './locales/i18n';
 
 const router = createBrowserRouter([
   {

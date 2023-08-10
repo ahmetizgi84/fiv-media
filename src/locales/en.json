@@ -1,0 +1,8 @@
+{
+    "time-short": "{{date, time-short}}",
+    "date-short": "{{date, date-short}}",
+    "date-medium": "{{date, date-medium}}",
+    "date-long": "{{date, date-long}}",
+    "date-combined": "{{date, combined-date-time}}",
+    "hello": "Hello"
+}
