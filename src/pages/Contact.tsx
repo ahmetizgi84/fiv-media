@@ -1,4 +1,8 @@
+import { useTranslation } from 'react-i18next';
+
 const Contact = () => {
+  const { t } = useTranslation();
+
   return (
     <div>
       <div className="bg-[#1a1a1a]">
@@ -17,8 +21,9 @@ const Contact = () => {
                 <div className="flex-auto w-[41.6%] flex items-center">
                   <div className="text">
                     <p className="text-base font-light text-gray-300 m-0 leading-[1.8rem]">
-                      We help our clients succeed by creating brand identities, digital experiences, and print materials
-                      that communicate clearly, achieve marketing goals, and look fantastic.
+                      {/* We help our clients succeed by creating brand identities, digital experiences, and print materials
+                      that communicate clearly, achieve marketing goals, and look fantastic. */}
+                      {t('contactInfo')}
                     </p>
                   </div>
                 </div>

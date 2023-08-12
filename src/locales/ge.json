@@ -4,5 +4,15 @@
     "date-medium": "{{date, date-medium}}",
     "date-long": "{{date, date-long}}",
     "date-combined": "{{date, combined-date-time}}",
-    "hello": "Merhaba"
+
+    "navbar": {
+        "about": "Überuns",
+        "contact": "kontakt",
+        "products": "produkte",
+        "testimonials": "testimonials"
+    },
+
+     "heroTitle": "kreativität auf neue Höhen gehoben",
+     "contactInfo": "Bei ETMedia nehmen wir Ihnen die kreative Last ab. Mit jahrelanger Erfahrung bieten wir Ihnen erstklassige kreative Arbeit, die von Kurzformat-Inhalten bis hin zum Markendesign und allem dazwischen reicht."
+ 
 }
