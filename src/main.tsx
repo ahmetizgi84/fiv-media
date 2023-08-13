@@ -11,6 +11,7 @@ import Home from './pages/Home';
 import MainLayout from './layouts/MainLayout';
 import Contact from './pages/Contact';
 import './locales/i18n';
+import About from './pages/About';
 
 const router = createBrowserRouter([
   {
@@ -23,7 +24,7 @@ const router = createBrowserRouter([
       },
       {
         path: '/about',
-        element: <div>About</div>
+        element: <About />
       },
       {
         path: '/contact',
