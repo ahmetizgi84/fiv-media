@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import { SelectLanguage } from '.';
 import { useTranslation } from 'react-i18next';
 
-const menuItems = ['about', 'contact', 'products', 'testimonials'];
+const menuItems = ['about', 'contact', 'services'];
 
 const Navbar = () => {
   const { t } = useTranslation();

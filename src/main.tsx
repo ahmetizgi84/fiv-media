@@ -12,6 +12,7 @@ import MainLayout from './layouts/MainLayout';
 import Contact from './pages/Contact';
 import './locales/i18n';
 import About from './pages/About';
+import Services from './pages/Services';
 
 const router = createBrowserRouter([
   {
@@ -31,12 +32,8 @@ const router = createBrowserRouter([
         element: <Contact />
       },
       {
-        path: '/products',
-        element: <div>Products</div>
-      },
-      {
-        path: '/testimonials',
-        element: <div>Testimonials</div>
+        path: '/services',
+        element: <Services />
       }
     ]
   },

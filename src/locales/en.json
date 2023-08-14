@@ -4,14 +4,12 @@
     "date-medium": "{{date, date-medium}}",
     "date-long": "{{date, date-long}}",
     "date-combined": "{{date, combined-date-time}}",
-
     "navbar": {
         "about": "about",
         "contact": "contact",
-        "products": "products",
+        "services": "services",
         "testimonials": "testimonials"
     },
-
     "heroTitle": "high end creative agency for all your needs",
     "contactInfo": "We at ETMedia take the creative load off your back. With years of experience we offer you high quality creative work ranging from Shortform Content to Brand Designing and everything in between"
 }
