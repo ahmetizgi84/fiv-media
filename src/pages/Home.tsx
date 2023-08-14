@@ -168,7 +168,7 @@ function MarqueText() {
         </Marquee>
       </div>
 
-      <div className="border border-white/[0.1] py-[70px] w-[110%] -ml-5">
+      {/* <div className="border border-white/[0.1] py-[70px] w-[110%] -ml-5">
         <div className="max-w-7xl mx-auto px-4 flex justify-evenly">
           <h2>HUQS</h2>
           <h2>WASP</h2>
@@ -176,7 +176,7 @@ function MarqueText() {
           <h2>TRUFFLE</h2>
           <h2>GNOSIS</h2>
         </div>
-      </div>
+      </div> */}
     </section>
   );
 }
@@ -527,7 +527,8 @@ function FooterTop() {
             </div>
             <div className="text">
               <p className="text-base font-[300] text-gray-300">
-                Germany — 785 15h Street, Office 478 Berlin, De 81566
+                {/* Germany — 785 15h Street, Office 478 Berlin, De 81566 */}
+                10781 Berlin Germany info@euroturk.com
               </p>
             </div>
           </div>
@@ -539,13 +540,13 @@ function FooterTop() {
             </div>
             <div className="text">
               <p className="text-base font-[300] text-gray-300 mb-[10px]">
-                <a href="#0">hello@design.com</a>
+                <a href="#0">info@euroturk.com</a>
               </p>
-              <h5 className="text-[24px] font-[500]">
+              {/* <h5 className="text-[24px] font-[500]">
                 <a className="inline-block" href="#">
                   +1 840 841 25 69
                 </a>
-              </h5>
+              </h5> */}
             </div>
           </div>
         </div>
