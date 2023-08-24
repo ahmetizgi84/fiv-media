@@ -66,7 +66,7 @@ export const testimonials = [
     id: 1,
     name: 'Leonard Heiser',
     pos: 'CEO',
-    desc: 'I have been hiring people in this space for a number of years and I have never seen this level of professionalism. It really feels like you are working with a team that can get the job done.',
+    desc: 'For years I have been working with different Agencies, but never have I encountered this level of professionalism. Easy to work with, Understanding of circumstances and high Quality Products. I am quite happy with ETMedia and will work with them in the future.',
     img: '/images/1.jpg'
   },
   {
