@@ -13,7 +13,7 @@ const Navbar = () => {
       <div className="max-w-7xl mx-auto px-4">
         <div className="flex justify-between items-center py-6">
           <Link to="/">
-            <p className="m-0 text-xl font-bold">ETMedia</p>
+            <p className="m-0 text-3xl font-bold">ETMedia</p>
           </Link>
           <ul className="hidden md:flex items-center m-0 uppercase">
             {menuItems.map(menuItem => (

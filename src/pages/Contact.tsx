@@ -12,9 +12,9 @@ const Contact = () => {
               <div className="flex flex-wrap">
                 <div className="flex-auto lg:w-[58.3%]">
                   <div className="caption">
-                    <h6 className="relative pl-5 text-sm font-light uppercase tracking-[2px]">· Contact Us</h6>
+                    <h6 className="relative pl-5 text-sm font-light uppercase tracking-[2px]">{t('contactTitle')}</h6>
                     <h1 className="lg:text-[55px] text-[32px] font-semibold">
-                      Let's make <br /> your brand brilliant!
+                      {t('contactTitle2')} <br /> {t('contactTitle3')}
                     </h1>
                   </div>
                 </div>

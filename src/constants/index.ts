@@ -1,3 +1,5 @@
+
+
 export const firstSettings = {
   infinite: true,
   speed: 3500,
@@ -66,7 +68,7 @@ export const testimonials = [
     id: 1,
     name: 'Leonard Heiser',
     pos: 'CEO',
-    desc: 'For years I have been working with different Agencies, but never have I encountered this level of professionalism. Easy to work with, Understanding of circumstances and high Quality Products. I am quite happy with ETMedia and will work with them in the future.',
+    desc:  '..',
     img: '/images/1.jpg'
   },
   {
@@ -77,3 +79,4 @@ export const testimonials = [
     img: '/images/2.jpg'
   }
 ];
+
