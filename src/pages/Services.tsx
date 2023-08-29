@@ -1,7 +1,9 @@
 import Marquee from 'react-fast-marquee';
 import { Link } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 
 const Services = () => {
+  const { t } = useTranslation();
   return (
     <div className="bg-[#1a1a1a]">
       <div className="max-w-7xl mx-auto px-4">
@@ -9,17 +11,16 @@ const Services = () => {
           <div className="lg:mt-20">
             <div>
               <div>
-                <h6 className="relative pl-5 text-sm font-light uppercase tracking-[2px]">· what can we do?</h6>
+                <h6 className="relative pl-5 text-sm font-light uppercase tracking-[2px]"> {t('servicesTitle')}</h6>
                 <h1 className="lg:text-[55px] text-[32px] font-semibold">
-                  We combine our passion for <br /> design and code.
+                  {t('servicesTitle2')} <br /> {t('servicesTitle3')}
                 </h1>
               </div>
 
               <div className="lg:w-[40%] mx-auto mt-10">
                 <div className="text">
                   <p className="text-base font-light text-gray-300 m-0 leading-[1.8rem]">
-                    We help our clients succeed by creating brand identities, digital experiences, and print materials
-                    that communicate clearly, achieve marketing goals, and look fantastic.
+                    {t('servicesComment')}
                   </p>
                 </div>
               </div>
@@ -34,19 +35,19 @@ const Services = () => {
           <Marquee>
             <div className="relative flex">
               <div className="px-[30px]">
-                <h4 className="text-[10vw] font-extrabold whitespace-nowrap m-0">services</h4>
+                <h4 className="text-[10vw] font-extrabold whitespace-nowrap m-0">{t('servicesShow')}</h4>
               </div>
               <div className="px-[30px]">
-                <h4 className="text-[10vw] font-extrabold whitespace-nowrap m-0 stroke">services</h4>
+                <h4 className="text-[10vw] font-extrabold whitespace-nowrap m-0 stroke">{t('servicesShow')}</h4>
               </div>
               <div className="px-[30px]">
-                <h4 className="text-[10vw] font-extrabold whitespace-nowrap m-0">services</h4>
+                <h4 className="text-[10vw] font-extrabold whitespace-nowrap m-0">{t('servicesShow')}</h4>
               </div>
               <div className="px-[30px]">
-                <h4 className="text-[10vw] font-extrabold whitespace-nowrap m-0 stroke">services</h4>
+                <h4 className="text-[10vw] font-extrabold whitespace-nowrap m-0 stroke">{t('servicesShow')}</h4>
               </div>
               <div className="px-[30px]">
-                <h4 className="text-[10vw] font-extrabold whitespace-nowrap m-0">services</h4>
+                <h4 className="text-[10vw] font-extrabold whitespace-nowrap m-0">{t('servicesShow')}</h4>
               </div>
             </div>
           </Marquee>
@@ -58,18 +59,18 @@ const Services = () => {
         <div className="md:flex pt-[120px] mb-[80px]">
           <div className="flex-1">
             <h6 className="py-2 px-14 text-xs uppercase tracking-[1px] rounded-3xl border inline-block border-gray-400 mb-4">
-              featured services
+              {t('servicesLTittle')}
             </h6>
-            <h2 className="md:text-5xl text-[28px] font-semibold">Our Services.</h2>
+            <h2 className="md:text-5xl text-[28px] font-semibold">{t('ourservicesTitle')}</h2>
           </div>
 
           <div className="basis-1/3 mx-auto">
             <p className="text-base font-light text-gray-300">
-              Nemo enim ipsam voluptatem quia voluptas sit odit aut fugit, sed quia.
+              ....
             </p>
 
             <button className="px-5 py-2 rounded-md mt-5 transition duration-300 ease-in-out border inline-block border-gray-400 hover:bg-white hover:text-zinc-800">
-              <Link to="#">View All Our News</Link>
+              <Link to="#">{t('newsButton')}</Link>
             </button>
           </div>
         </div>
@@ -81,10 +82,10 @@ const Services = () => {
             <img src="/images/0.png" alt="" className="w-full h-full object-cover align-middle" />
           </div>
 
-          <span className="opacity-70">UI/UX Design </span>
-          <h6 className="mb-4 mt-3 text-xl font-medium">Digital Product Design</h6>
+          
+          <h6 className="mb-4 mt-3 text-xl font-medium">{t('card1')}</h6>
           <p className="text-sm font-light text-gray-300 m-0 max-w-xs  ">
-          In cooperation with renown Artist and technicians we develop your Ideas in the highest quality possible. We create Content and Interface for your Brand and market them accordingly for the highest revenue gain.
+            {t('UxComment')}
           </p>
 
           <div className=''>
@@ -113,10 +114,11 @@ const Services = () => {
             <img src="/images/1.png" alt="" className="w-full h-full object-cover align-middle" />
           </div>
 
-          <span className="opacity-70">Branding</span>
-          <h6 className="mb-4 mt-3 text-xl font-medium">Branding & Design</h6>
+          
+          <h6 className="mb-4 mt-3 text-xl font-medium">{t('card2')}</h6>
           <p className="text-sm font-light text-gray-300 m-0 max-w-xs  ">
-          In cooperation with renown Artist and technicians we develop your Ideas in the highest quality possible. We create Content and Interface for your Brand and market them accordingly for the highest revenue gain.
+            {t('BrandingComment')}
+
           </p>
 
           <div className='flex'>
@@ -145,10 +147,10 @@ const Services = () => {
             <img src="/images/2.png" alt="" className="w-full h-full object-cover align-middle" />
           </div>
 
-          <span className="opacity-70">Web Development</span>
-          <h6 className="mb-4 mt-3 text-xl font-medium">Digital Product Design</h6>
+          
+          <h6 className="mb-4 mt-3 text-xl font-medium">{t('card3')}</h6>
           <p className="text-sm font-light text-gray-300 m-0 max-w-xs  ">
-          In cooperation with renown Artist and technicians we develop your Ideas in the highest quality possible. We create Content and Interface for your Brand and market them accordingly for the highest revenue gain.
+          {t('DevelopmentComment')}
           </p>
 
           <div>
@@ -177,11 +179,10 @@ const Services = () => {
             <img src="/images/2.png" alt="" className="w-full h-full object-cover align-middle" />
           </div>
 
-          <span className="opacity-70">Marketing</span>
-          <h6 className="mb-4 mt-3 text-xl font-medium">Marketing</h6>
+         
+          <h6 className="mb-4 mt-3 text-xl font-medium">{t('card4')}</h6>
           <p className="text-sm font-light text-gray-300 m-0 max-w-xs  ">
-          Marketing the product the right way is the crucial part in succeeding over the competition. Our Job is to take that load of you. 
-Without a Market a Brand can not survive no matter how good it is. Our Mission is to enhance your Marketing value through direct Communication and targeted (Audience?)
+          {t('MarketingComment')}
           </p>
 
           <div>
@@ -209,10 +210,10 @@ Without a Market a Brand can not survive no matter how good it is. Our Mission i
             <img src="/images/2.png" alt="" className="w-full h-full object-cover align-middle" />
           </div>
 
-          <span className="opacity-70">Specialized Services</span>
-          <h6 className="mb-4 mt-3 text-xl font-medium">Digital Product Design</h6>
+          
+          <h6 className="mb-4 mt-3 text-xl font-medium">{t('card5')}</h6>
           <p className="text-sm font-light text-gray-300 m-0 max-w-xs ">
-          Is there something you need that is more special? Contact us we will make sure to deliver the highest Quality.
+          {t('SpecialServicesComment')}
           </p>
 
           <div>
@@ -248,10 +249,10 @@ Without a Market a Brand can not survive no matter how good it is. Our Mission i
         <div className="basis-1/2 px-4">
           <div className="flex-1 mb-20">
             <h6 className="py-2 px-14 text-xs uppercase tracking-[1px] rounded-3xl border inline-block border-gray-400 mb-4">
-              services
+              {t('servicesShow')}
             </h6>
             <p className="text-base font-light text-gray-300">
-              We help you to go online and increase your conversion rate Better design for your digital products.
+              {t('ServicesLastComment')}
             </p>
           </div>
           {/*  */}
@@ -260,22 +261,22 @@ Without a Market a Brand can not survive no matter how good it is. Our Mission i
             <li
               className="text-4xl font-medium cursor-pointer pb-5 mb-5 border-b-[1px] border-white/[0.05]"
               data-tab="tabs-1">
-              <span className="text-xl mr-8 inline-block">01</span> UI/UX Design
+              <span className="text-xl mr-8 inline-block">01</span> {t('card1')}
             </li>
             <li
               className="text-4xl font-medium cursor-pointer pb-5 mb-5 border-b-[1px] border-white/[0.05]"
               data-tab="tabs-2">
-              <span className="text-xl mr-8 inline-block">02</span> Branding
+              <span className="text-xl mr-8 inline-block">02</span> {t('card2')}
             </li>
             <li
               className="text-4xl font-medium cursor-pointer pb-5 mb-5 border-b-[1px] border-white/[0.05]"
               data-tab="tabs-3">
-              <span className="text-xl mr-8 inline-block">03</span> Development
+              <span className="text-xl mr-8 inline-block">03</span>{t('card3')}
             </li>
             <li
               className="text-4xl font-medium cursor-pointer pb-5 mb-5 border-b-[1px] border-white/[0.05]"
               data-tab="tabs-4">
-              <span className="text-xl mr-8 inline-block">04</span> Marketing
+              <span className="text-xl mr-8 inline-block">04</span> {t('card4')}
             </li>
           </ul>
         </div>

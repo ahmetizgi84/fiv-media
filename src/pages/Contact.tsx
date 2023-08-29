@@ -41,7 +41,7 @@ const Contact = () => {
             <div className="flex-auto lg:w-[41.66%]">
               <div className="sec-lg-head mb-20">
                 <h6 className="py-[7px] px-[30px] uppercase text-xs rounded-[30px] border-gray-400 border inline-block mb-[10px]">
-                  Get In Touch
+                  {t('contactTitle4')}
                 </h6>
                 <h2 className="lg:text-[50px] text-[35px] font-semibold">
                   Let's get in <br /> touch with us.
