@@ -61,7 +61,33 @@
     "DevelopmentComment": "From conception to reality, we transform your vision into functional, visually appealing digital products. Our development expertise ensures seamless user experiences.",
     "MarketingComment": "Marketing the product the right way is the crucial part in succeeding over the competition. Our Job is to take that load of you. Without a Market a Brand can not survive no matter how good it is. Our Mission is to enhance your Marketing value through direct Communication and targeted (Audience?)",
     "SpecialServicesComment": " Is there something you need that is more special? Contact us we will make sure to deliver the highest Quality.",
-    "ServicesLastComment": "We help you to go online and increase your conversion rate, to make better designs for your digital products."
+    "ServicesLastComment": "We help you to go online and increase your conversion rate, to make better designs for your digital products.",
+    
+        "testimonials": [
+          {
+            "id": 1,
+            "name": "Leonard Heiser",
+            "pos": "CEO",
+            "desc": "testimonial1",
+            "img": "/images/1.jpg"
+          },
+          {
+            "id": 2,
+            "name": "Chris Chong",
+            "pos": "CEO",
+            "desc": "testimonial2",
+            "img": "/images/2.jpg"
+          }
+        ],
+        "test": {
+          "testimonial1": "For years I have been working with different Agencies, but never have I encountered this level of professionalism. Easy to work with, Understanding of circumstances and high Quality Products. I am quite happy with ETMedia and will work with them in the future.",
+          "testimonial2": "I have been hiring people in this space for a number of years and I have never seen this level of professionalism. It really feels like you are working with a team that can get the job done."
+        }
+      
+      
+
+
+    
 
 
 }   

@@ -8,6 +8,7 @@ import { StarFill } from 'react-bootstrap-icons';
 import { firstSettings, secondSettings, solutions, testimonials } from '@/constants';
 
 
+
 // import { useTranslation } from 'react-i18next';
 
 
@@ -456,6 +457,7 @@ function SimpleCard() {
 
 function PeopleSay() {
   const { t } = useTranslation();
+  
 
   return (
     <section className="py-[120px] md:flex mx-auto bg-[#1a1a1a]">
@@ -484,7 +486,13 @@ function PeopleSay() {
           <div className="flex-[0.5] md:max-w-[50%]">
             <Slider {...secondSettings}>
               {testimonials.map(test => (
-                <TestimonialCard key={test.id} test={test} />
+                <TestimonialCard key={test.id} test={{
+                  id: test.id,
+                  name: test.name,  
+                  pos: test.pos,
+                  desc: t(`test.${test.desc}`),
+                  img: test.img
+                }} />
               ))}
             </Slider>
           </div>

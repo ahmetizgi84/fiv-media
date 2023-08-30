@@ -68,14 +68,14 @@ export const testimonials = [
     id: 1,
     name: 'Leonard Heiser',
     pos: 'CEO',
-    desc:  '..',
+    desc:  'testimonial1',
     img: '/images/1.jpg'
   },
   {
     id: 2,
     name: 'Chris Chong',
     pos: 'CEO',
-    desc: 'I have been hiring people in this space for a number of years and I have never seen this level of professionalism. It really feels like you are working with a team that can get the job done.',
+    desc: 'testimonial2',
     img: '/images/2.jpg'
   }
 ];

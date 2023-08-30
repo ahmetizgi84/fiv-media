@@ -60,10 +60,29 @@
     "DevelopmentComment": "Von der Konzeption bis zur Realität verwandeln wir Ihre Vision in funktionale, visuell ansprechende digitale Produkte. Unsere Entwicklungskompetenz sorgt für nahtlose Benutzererlebnisse.",
     "MarketingComment": "Die effektive Vermarktung Ihres Produkts ist entscheidend, um sich gegenüber der Konkurrenz durchzusetzen. Wir übernehmen die Verantwortung für die Gestaltung Ihrer Marketingkampagnen. Das Überleben einer Marke hängt von einer starken Marktpräsenz ab, unabhängig von ihrer Qualität. Unsere Mission ist es, Ihren Marketingwert durch direkte Kommunikation und zielgerichtete Strategien zu steigern.",
     "SpecialServicesComment": " Wenn Sie etwas Einzigartiges benötigen, stehen wir Ihnen zur Verfügung. Kontaktieren Sie uns, und wir stellen sicher, dass wir qualitativ hochwertige Lösungen liefern, die auf Ihre Anforderungen zugeschnitten sind.",
-    "ServicesLastComment": "Wir helfen Ihnen, online zu gehen und Ihre Konversionsrate zu erhöhen. Bessere Designs für Ihre digitalen Produkte zu kreieren."
-
-
+    "ServicesLastComment": "Wir helfen Ihnen, online zu gehen und Ihre Konversionsrate zu erhöhen. Bessere Designs für Ihre digitalen Produkte zu kreieren.",
     
+    "testimonials": [
+        {
+          "id": 1,
+          "name": "Leonard Heiser",
+          "pos": "CEO",
+          "desc": "testimonial1",
+          "img": "/images/1.jpg"
+        },
+        {
+          "id": 2,
+          "name": "Chris Chong",
+          "pos": "CEO",
+          "desc": "testimonial2",
+          "img": "/images/2.jpg"
+        }
+      ],
+      "test": {
+        "testimonial1": "Nach der Zusammenarbeit mit zahlreichen Agenturen habe ich noch nie ein solches Maß an Professionalität erlebt. ETMedia ist leicht zu handhaben, passt sich den Umständen an und liefert erstklassige Produkte. Ich bin wirklich zufrieden mit ETMedia und freue mich auf zukünftige Zusammenarbeit",
+        "testimonial2": "Ich habe seit einigen Jahren Mitarbeiter in diesem Bereich eingestellt und noch nie ein solches Maß an Professionalität erlebt. Es fühlt sich wirklich an, als würde man mit einem Team arbeiten, das die Arbeit erledigen kann."
+      }
+       
     
 
 }
