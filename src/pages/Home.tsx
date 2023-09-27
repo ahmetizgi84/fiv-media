@@ -90,7 +90,7 @@ function Hero() {
      
 
         <motion.div variants={itemVariants} className="md:h-[400px] md:w-[60%] mt-12 md:mt-0">
-          <img src="/images/14.jpg" alt="fiv-media hero" className="w-full h-full object-cover object-center" />
+        <img src="/images/14.jpg" alt="fiv-media hero" className="w-full h-full object-cover object-center" />
         </motion.div>
       </div>
 
@@ -390,8 +390,12 @@ function SimpleCard() {
   return (
     <div className="mt-8 flex h-full flex-1 justify-end items-center w-full md:mr-20">
       <div className="md:w-[42vw] w-full relative">
-        <div className="">
-          <img src="images/02.jpg" alt="" className="w-full h-auto align-middle" />
+        <div className="grid grid-cols-3 gap-8">
+        <iframe className='w-full h-auto align-middle' src="https://www.youtube.com/embed/d2F74daT05Q?si=EdfCq4UqMlwaPdda" title="YouTube video player"  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"></iframe>
+        <iframe className='w-full h-auto align-middle' src="https://www.youtube.com/embed/4LCIoy-kf_A?si=iwbijThXhVAPVwrJ" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" ></iframe>
+        <iframe className='w-full h-auto align-middle' src="https://www.youtube.com/embed/0KVXI9ce-ss?si=iG7wEfpwpz9GXpiF" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" ></iframe>
+        <iframe className='w-full h-auto align-middle' src="https://www.youtube.com/embed/zrJ3x8knfgc?si=eZKajkx9qMhgU8rE" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" ></iframe>
+        <iframe className='w-full h-auto align-middle' src="https://www.youtube.com/embed/z7il7_XOehA?si=FU47VS1w_fbL_FZW"  title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" ></iframe>
         </div>
         <div className="flex items-end mt-8">
           <div>
@@ -474,7 +478,7 @@ function PeopleSay() {
           <div className="relative flex-[0.5] ml-16 md:ml-0 mb-8 md:mb-0 ">
             <div className="border border-white/[0.5] md:w-80 md:h-80 h-36 w-36 rounded-full overflow-hidden items-center justify-center flex">
               <div className="w-36 h-36 rounded-full p-10 relative z-10 bg-[#1d1d1d]">
-                <img src="/images/quote.png" alt="" className="w-full h-auto align-middle" />
+              <img src="/images/quote.png" alt="" className="w-full h-auto align-middle" /> 
               </div>
             </div>
             <div className="absolute top-0 left-1/4 md:w-80 md:h-80 w-36 h-36 rounded-full overflow-hidden">
