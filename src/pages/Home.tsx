@@ -198,7 +198,7 @@ function OurServices() {
         </div>
       </div>
 
-      <div className="grid grid-cols-3  gap-9 justify-center items-center items-stretch min-w-max  max-sm:grid-cols-1 " >
+      <div className="grid grid-cols-3  gap-9 justify-center items-center min-w-max  max-sm:grid-cols-1 " >
         {/* CARD 1 */}
         <div className="flex-1 items-start border border-white/[0.1] md:p-14 p-8   ">
           <div className="w-12 mb-10">
@@ -481,9 +481,7 @@ function PeopleSay() {
               <img src="/images/quote.png" alt="" className="w-full h-auto align-middle" /> 
               </div>
             </div>
-            <div className="absolute top-0 left-1/4 md:w-80 md:h-80 w-36 h-36 rounded-full overflow-hidden">
-              <img src="#" alt="" className="w-full h-full object-cover object-center align-middle" />
-            </div>
+           
           </div>
 
           {/* ITEM */}
