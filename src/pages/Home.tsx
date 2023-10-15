@@ -5,7 +5,7 @@ import { motion, Variants } from 'framer-motion';
 import { ArrowRightShort } from 'react-bootstrap-icons';
 import { useTranslation } from 'react-i18next';
 import { StarFill } from 'react-bootstrap-icons';
-import { firstSettings, secondSettings, solutions, testimonials } from '@/constants';
+import {  secondSettings, solutions, testimonials } from '@/constants';
 import { Suspense } from 'react'
 
 import LazySimpleCard from './LazySimpleCard';
@@ -372,25 +372,19 @@ function Works() {
   
   return (
     <section className="pt-[120px]">
-      <Slider {...firstSettings}>
-        <SimpleCard />
-        <SimpleCard />
-        <SimpleCard />
-        <SimpleCard />
-        <SimpleCard />
-        <SimpleCard />
-        <SimpleCard />
-        <SimpleCard />
-        <SimpleCard />
-      </Slider>
+     
+      <SimpleCard />
+      
+      
+      
     </section>
   );
-}
+} 
 
 function SimpleCard() {
   return (
     <div className="mt-8 flex h-full flex-1 justify-end items-center w-full md:mr-20">
-      <div className="md:w-[42vw] w-full relative">
+      <div className="md:w-[100vw] w-full relative">
       <Suspense fallback={<div>Loading...</div>}>
           <LazySimpleCard />
         </Suspense>
