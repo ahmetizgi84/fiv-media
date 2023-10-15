@@ -83,7 +83,7 @@ function Hero() {
             {t('heroInfo')}
             
           </motion.p>
-          <button className="relative z-50  mt-6 ml-14  px-14 py-2 rounded-3xl border transition duration-300 ease-in-out hover:bg-white hover:text-zinc-800 border inline-block border-gray-400">
+          <button className="relative z-40  mt-6 ml-14  px-14 py-2 rounded-3xl border transition duration-300 ease-in-out hover:bg-white hover:text-zinc-800  inline-block border-gray-400">
           <Link to="/Contact"> {t('heroContact')}</Link>
         </button>
      </div>
