@@ -6,8 +6,9 @@ import { ArrowRightShort } from 'react-bootstrap-icons';
 import { useTranslation } from 'react-i18next';
 import { StarFill } from 'react-bootstrap-icons';
 import { firstSettings, secondSettings, solutions, testimonials } from '@/constants';
+import { Suspense } from 'react'
 
-
+import LazySimpleCard from './LazySimpleCard';
 
 // import { useTranslation } from 'react-i18next';
 
@@ -390,13 +391,9 @@ function SimpleCard() {
   return (
     <div className="mt-8 flex h-full flex-1 justify-end items-center w-full md:mr-20">
       <div className="md:w-[42vw] w-full relative">
-        <div className="grid grid-cols-3 gap-8">
-        <iframe className='w-full h-auto align-middle' src="https://www.youtube.com/embed/d2F74daT05Q?si=EdfCq4UqMlwaPdda" title="YouTube video player"  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"></iframe>
-        <iframe className='w-full h-auto align-middle' src="https://www.youtube.com/embed/4LCIoy-kf_A?si=iwbijThXhVAPVwrJ" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" ></iframe>
-        <iframe className='w-full h-auto align-middle' src="https://www.youtube.com/embed/0KVXI9ce-ss?si=iG7wEfpwpz9GXpiF" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" ></iframe>
-        <iframe className='w-full h-auto align-middle' src="https://www.youtube.com/embed/zrJ3x8knfgc?si=eZKajkx9qMhgU8rE" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" ></iframe>
-        <iframe className='w-full h-auto align-middle' src="https://www.youtube.com/embed/z7il7_XOehA?si=FU47VS1w_fbL_FZW"  title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" ></iframe>
-        </div>
+      <Suspense fallback={<div>Loading...</div>}>
+          <LazySimpleCard />
+        </Suspense>
         <div className="flex items-end mt-8">
           <div>
             <span className="text-sm font-medium uppercase tracking-wider opacity-75 inline-block">Web Design</span>
