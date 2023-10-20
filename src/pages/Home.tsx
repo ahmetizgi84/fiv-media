@@ -382,6 +382,7 @@ function Works() {
 } 
 
 function SimpleCard() {
+  const { t } = useTranslation();
   return (
     <div className="mt-8 flex h-full flex-1 justify-end items-center w-full md:mr-20">
       <div className="md:w-[100vw] w-full relative">
@@ -389,15 +390,20 @@ function SimpleCard() {
           <LazySimpleCard />
         </Suspense>
         <div className="flex items-end mt-8">
-          <div>
+          {/* <div>
             <span className="text-sm font-medium uppercase tracking-wider opacity-75 inline-block">Web Design</span>
             <h5 className="font-semibold md:mb-1 md:text-2xl text-[18px]">Mobile Software</h5>
-          </div>
-          <div className="ml-auto">
+          </div> */}
+         {/*  <div className="ml-auto">
             <h6 className="md:text-xl text-base font-medium">2023</h6>
-          </div>
+          </div> */}
         </div>
-        <a href="#0" className="absolute top-0 left-0 w-full h-full inline-block"></a>
+       {/*  <a href="#0" className="absolute top-0 left-0 w-full h-full inline-block"></a> */}
+      <div className='mx-auto text-center '>
+      <button className="px-5 py-2 rounded-md mt-5 transition duration-300 ease-in-out hover:bg-white hover:text-zinc-800 border inline-block border-gray-400 ">
+          <Link to="https://www.youtube.com/@euroturk-tv" target='blank'>{t('newsButton1')}</Link>
+        </button>
+      </div>
       </div>
     </div>
   );
