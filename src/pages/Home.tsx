@@ -384,23 +384,16 @@ function Works() {
 function SimpleCard() {
   const { t } = useTranslation();
   return (
-    <div className="mt-8 flex h-full flex-1 justify-end items-center w-full md:mr-20">
-      <div className="md:w-[100vw] w-full relative">
-      <Suspense fallback={<div>Loading...</div>}>
-          <LazySimpleCard />
-        </Suspense>
-        <div className="flex items-end mt-8">
-          {/* <div>
-            <span className="text-sm font-medium uppercase tracking-wider opacity-75 inline-block">Web Design</span>
-            <h5 className="font-semibold md:mb-1 md:text-2xl text-[18px]">Mobile Software</h5>
-          </div> */}
-         {/*  <div className="ml-auto">
-            <h6 className="md:text-xl text-base font-medium">2023</h6>
-          </div> */}
-        </div>
-       {/*  <a href="#0" className="absolute top-0 left-0 w-full h-full inline-block"></a> */}
-      <div className='mx-auto text-center '>
-      <button className="px-5 py-2 rounded-md mt-5 transition duration-300 ease-in-out hover:bg-white hover:text-zinc-800 border inline-block border-gray-400 ">
+   <div className="mt-8 flex h-full flex-1 justify-end items-center w-full md:mr-20 ">
+    <div className="md:w-[100vw] w-full relative gifanimasyon  h-screen  bg-auto max-sm:mx-auto max-sm:w-96 max-sm:h-96 " >
+      
+        
+      {/* <Suspense fallback={<div>Loading...</div>} >
+          <LazySimpleCard />  
+        </Suspense> */}
+       
+      <div className='mx-auto text-center mt-96 '>
+      <button className="px-5 py-2 rounded-md md:mt-96 mt-4 transition duration-300 ease-in-out hover:bg-white hover:text-zinc-800 border inline-block border-gray-400  ">
           <Link to="https://www.youtube.com/@euroturk-tv" target='blank'>{t('newsButton1')}</Link>
         </button>
       </div>
@@ -461,7 +454,7 @@ function PeopleSay() {
   
 
   return (
-    <section className="py-[120px] md:flex mx-auto bg-[#1a1a1a]">
+    <section className="py-[120px] md:flex mx-auto  mt-5 bg-[#1a1a1a]">
       <div className="max-w-7xl mx-auto px-4">
         <div className="text-center mb-20">
           <h6 className="py-2 px-14 text-xs uppercase tracking-[1px] rounded-3xl border inline-block border-gray-400 mb-4">

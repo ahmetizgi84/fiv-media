@@ -24,3 +24,9 @@ body {
 .marquee {
     overflow-x: hidden;
 }
+
+.gifanimasyon {
+    background-image: url("./gif/Animasyon.gif");
+    background-size: cover;
+}
+
