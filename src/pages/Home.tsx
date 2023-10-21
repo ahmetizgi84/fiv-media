@@ -6,9 +6,7 @@ import { ArrowRightShort } from 'react-bootstrap-icons';
 import { useTranslation } from 'react-i18next';
 import { StarFill } from 'react-bootstrap-icons';
 import {  secondSettings, solutions, testimonials } from '@/constants';
-import { Suspense } from 'react'
 
-import LazySimpleCard from './LazySimpleCard';
 
 // import { useTranslation } from 'react-i18next';
 
@@ -388,9 +386,7 @@ function SimpleCard() {
     <div className="md:w-[100vw] w-full relative gifanimasyon  h-screen  bg-auto max-sm:mx-auto max-sm:w-96 max-sm:h-96 " >
       
         
-      {/* <Suspense fallback={<div>Loading...</div>} >
-          <LazySimpleCard />  
-        </Suspense> */}
+      
        
       <div className='mx-auto text-center mt-96 '>
       <button className="px-5 py-2 rounded-md md:mt-96 mt-4 transition duration-300 ease-in-out hover:bg-white hover:text-zinc-800 border inline-block border-gray-400  ">
