@@ -199,7 +199,7 @@ function OurServices() {
 
       <div className="grid grid-cols-3  gap-9 justify-center items-center min-w-max  max-sm:grid-cols-1 " >
         {/* CARD 1 */}
-        <div className="flex-1 items-start border border-white/[0.1] md:p-14 p-8   ">
+        <div className="max-w-md max-sm:max-w-md  flex-1 items-start border border-white/[0.1] md:p-14 p-8   ">
           <div className="w-12 mb-10">
             <img src="/images/0.png" alt="" className="w-full h-full object-cover align-middle" />
           </div>
@@ -213,10 +213,10 @@ function OurServices() {
           <div className=''>
             <Link
               to='/services'
-              className="w-full py-4 pl-8 border border-white/[0.05] rounded-[30px] transition duration-300 ease-in-out relative mt-8 uppercase text-xs tracking-wider inline-block no-underline hover:bg-white hover:text-zinc-800 max-sm:mx-auto">
+              className="w-full py-1 pl-8 border border-white/[0.05] rounded-[30px] transition duration-300 ease-in-out relative mt-8 uppercase text-xs tracking-wider inline-block no-underline hover:bg-white hover:text-zinc-800 max-sm:mx-auto">
               {t('readMore')}
               <svg
-                className="relative -top-0 right-0 w-12 h-12 p-4 border border-white/[0.05] rounded-[50%]"
+                className="relative inline-block -top-0 right-0 w-12 h-12 p-4 border border-white/[0.05] rounded-[50%] ml-32 max-sm:ml-56 "
                 width="18"
                 height="18"
                 viewBox="0 0 18 18"
@@ -231,7 +231,7 @@ function OurServices() {
         </div>
 
         {/* CARD 2 */}
-        <div className="flex-1 border  border-white/[0.1] md:p-12 p-8">
+        <div className="max-w-md max-sm:max-w-md flex-1 border  border-white/[0.1] md:p-12 p-8">
           <div className="w-12 mb-10">
             <img src="/images/1.png" alt="" className="w-full h-full object-cover align-middle" />
           </div>
@@ -245,10 +245,10 @@ function OurServices() {
           <div className='flex'>
           <Link
               to='/services'
-              className="w-full py-4 pl-8 border border-white/[0.05] rounded-[30px] transition duration-300 ease-in-out relative mt-8 uppercase text-xs tracking-wider inline-block no-underline hover:bg-white hover:text-zinc-800 max-sm:mx-auto">
+              className="w-full py-1 pl-8 border border-white/[0.05] rounded-[30px] transition duration-300 ease-in-out relative mt-8 uppercase text-xs tracking-wider inline-block no-underline hover:bg-white hover:text-zinc-800 max-sm:mx-auto  ">
               {t('readMore')}
               <svg
-                className="relative -top-0 right-0 w-12 h-12 p-4 border border-white/[0.05] rounded-[50%]"
+                className="relative inline-block -top-0 right-0 w-12 h-12 p-4 border border-white/[0.05] rounded-[50%] ml-36  max-sm:ml-56 "
                 width="18"
                 height="18"
                 viewBox="0 0 18 18"
@@ -263,7 +263,7 @@ function OurServices() {
         </div>
 
         {/* CARD 3 */}
-        <div className="flex-1 border  border-white/[0.1] md:p-14 p-8">
+        <div className="max-w-md max-sm:max-w-md  flex-1 border  border-white/[0.1] md:p-14 p-8">
           <div className="w-12 mb-10">
             <img src="/images/2.png" alt="" className="w-full h-full object-cover align-middle" />
           </div>
@@ -277,10 +277,10 @@ function OurServices() {
           <div>
           <Link
               to='/services'
-              className="w-full py-4 pl-8 border border-white/[0.05] rounded-[30px] transition duration-300 ease-in-out relative mt-8 uppercase text-xs tracking-wider inline-block no-underline hover:bg-white hover:text-zinc-800 max-sm:mx-auto">
+              className="w-full py-1 pl-8 border border-white/[0.05] rounded-[30px] transition duration-300 ease-in-out relative mt-8 uppercase text-xs tracking-wider inline-block no-underline hover:bg-white hover:text-zinc-800 max-sm:mx-auto">
               {t('readMore')}
               <svg
-                className="relative -top-0 right-0 w-12 h-12 p-4 border border-white/[0.05] rounded-[50%]"
+                className="relative inline-block -top-0 right-0 w-12 h-12 p-4 border border-white/[0.05] rounded-[50%] ml-32 max-sm:ml-56  "
                 width="18"
                 height="18"
                 viewBox="0 0 18 18"
@@ -295,7 +295,7 @@ function OurServices() {
         </div>
 
         {/* Kart 4 */}
-        <div className="flex-1 border  border-white/[0.1] md:p-14 p-8 ">
+        <div className="max-w-md max-sm:max-w-md  flex-1 border  border-white/[0.1] md:p-14 p-8 ">
           <div className="w-12 mb-10">
             <img src="/images/2.png" alt="" className="w-full h-full object-cover align-middle" />
           </div>
@@ -310,10 +310,10 @@ Without a Market a Brand can not survive no matter how good it is. Our Mission i
           <div>
           <Link
               to='/services'
-              className="w-full py-4 pl-8 border border-white/[0.05] rounded-[30px] transition duration-300 ease-in-out relative mt-8 uppercase text-xs tracking-wider inline-block no-underline hover:bg-white hover:text-zinc-800 max-sm:mx-auto">
+              className="w-full py-1 pl-8 border border-white/[0.05] rounded-[30px] transition duration-300 ease-in-out relative mt-8 uppercase text-xs tracking-wider inline-block no-underline hover:bg-white hover:text-zinc-800 max-sm:mx-auto">
               {t('readMore')}
               <svg
-                className="relative -top-0 right-0 w-12 h-12 p-4 border border-white/[0.05] rounded-[50%]"
+                className="relative inline-block -top-0 right-0 w-12 h-12 p-4 border border-white/[0.05] rounded-[50%]  ml-32 max-sm:ml-56 "
                 width="18"
                 height="18"
                 viewBox="0 0 18 18"
@@ -327,7 +327,7 @@ Without a Market a Brand can not survive no matter how good it is. Our Mission i
           </div>
         </div>
         {/* Kart 5 */}
-        <div className="flex-1 border  border-white/[0.1] md:p-14 p-8 ">
+        <div className=" max-w-md max-sm:max-w-md  flex-1 border  border-white/[0.1] md:p-14 p-8 ">
           <div className="w-12 mb-10">
             <img src="/images/2.png" alt="" className="w-full h-full object-cover align-middle" />
           </div>
@@ -341,10 +341,10 @@ Without a Market a Brand can not survive no matter how good it is. Our Mission i
           <div>
           <Link
               to='/services'
-              className="w-full py-4 pl-8 border border-white/[0.05] rounded-[30px] transition duration-300 ease-in-out relative mt-8 uppercase text-xs tracking-wider inline-block no-underline hover:bg-white hover:text-zinc-800 max-sm:mx-auto">
+              className="w-full py-1 pl-8 border border-white/[0.05] rounded-[30px] transition duration-300 ease-in-out relative mt-8 uppercase text-xs tracking-wider inline-block no-underline hover:bg-white hover:text-zinc-800 max-sm:mx-auto">
               {t('readMore')}
               <svg
-                className="relative -top-0 right-0 w-12 h-12 p-4 border border-white/[0.05] rounded-[50%]"
+                className="relative inline-block -top-0 right-0 w-12 h-12 p-4 border border-white/[0.05] rounded-[50%] ml-32 max-sm:ml-56 "
                 width="18"
                 height="18"
                 viewBox="0 0 18 18"
@@ -383,7 +383,7 @@ function SimpleCard() {
   const { t } = useTranslation();
   return (
    <div className="mt-8 h-full flex-1 justify-end items-center w-full md:mr-20 ">
-    <div className="md:w-[100vw] w-full relative gifanimasyon  h-screen  bg-auto max-sm:mx-auto max-sm:w-96 max-sm:h-96 " >
+    <div className="md:w-[100vw] w-full relative gifanimasyon  h-screen  bg-auto max-sm:mx-auto max-sm:w-84 max-sm:h-96 " >
       
         
       
