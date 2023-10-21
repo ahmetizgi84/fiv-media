@@ -213,7 +213,7 @@ function OurServices() {
           <div className=''>
             <Link
               to='/services'
-              className="w-full py-4 pl-8 border border-white/[0.05] rounded-[30px] transition duration-300 ease-in-out relative mt-8 uppercase text-xs tracking-wider inline-block no-underline hover:bg-white hover:text-zinc-800">
+              className="w-full py-4 pl-8 border border-white/[0.05] rounded-[30px] transition duration-300 ease-in-out relative mt-8 uppercase text-xs tracking-wider inline-block no-underline hover:bg-white hover:text-zinc-800 max-sm:mx-auto">
               {t('readMore')}
               <svg
                 className="relative -top-0 right-0 w-12 h-12 p-4 border border-white/[0.05] rounded-[50%]"
@@ -245,7 +245,7 @@ function OurServices() {
           <div className='flex'>
           <Link
               to='/services'
-              className="w-full py-4 pl-8 border border-white/[0.05] rounded-[30px] transition duration-300 ease-in-out relative mt-8 uppercase text-xs tracking-wider inline-block no-underline hover:bg-white hover:text-zinc-800">
+              className="w-full py-4 pl-8 border border-white/[0.05] rounded-[30px] transition duration-300 ease-in-out relative mt-8 uppercase text-xs tracking-wider inline-block no-underline hover:bg-white hover:text-zinc-800 max-sm:mx-auto">
               {t('readMore')}
               <svg
                 className="relative -top-0 right-0 w-12 h-12 p-4 border border-white/[0.05] rounded-[50%]"
@@ -277,7 +277,7 @@ function OurServices() {
           <div>
           <Link
               to='/services'
-              className="w-full py-4 pl-8 border border-white/[0.05] rounded-[30px] transition duration-300 ease-in-out relative mt-8 uppercase text-xs tracking-wider inline-block no-underline hover:bg-white hover:text-zinc-800">
+              className="w-full py-4 pl-8 border border-white/[0.05] rounded-[30px] transition duration-300 ease-in-out relative mt-8 uppercase text-xs tracking-wider inline-block no-underline hover:bg-white hover:text-zinc-800 max-sm:mx-auto">
               {t('readMore')}
               <svg
                 className="relative -top-0 right-0 w-12 h-12 p-4 border border-white/[0.05] rounded-[50%]"
@@ -310,7 +310,7 @@ Without a Market a Brand can not survive no matter how good it is. Our Mission i
           <div>
           <Link
               to='/services'
-              className="w-full py-4 pl-8 border border-white/[0.05] rounded-[30px] transition duration-300 ease-in-out relative mt-8 uppercase text-xs tracking-wider inline-block no-underline hover:bg-white hover:text-zinc-800">
+              className="w-full py-4 pl-8 border border-white/[0.05] rounded-[30px] transition duration-300 ease-in-out relative mt-8 uppercase text-xs tracking-wider inline-block no-underline hover:bg-white hover:text-zinc-800 max-sm:mx-auto">
               {t('readMore')}
               <svg
                 className="relative -top-0 right-0 w-12 h-12 p-4 border border-white/[0.05] rounded-[50%]"
@@ -341,7 +341,7 @@ Without a Market a Brand can not survive no matter how good it is. Our Mission i
           <div>
           <Link
               to='/services'
-              className="w-full py-4 pl-8 border border-white/[0.05] rounded-[30px] transition duration-300 ease-in-out relative mt-8 uppercase text-xs tracking-wider inline-block no-underline hover:bg-white hover:text-zinc-800">
+              className="w-full py-4 pl-8 border border-white/[0.05] rounded-[30px] transition duration-300 ease-in-out relative mt-8 uppercase text-xs tracking-wider inline-block no-underline hover:bg-white hover:text-zinc-800 max-sm:mx-auto">
               {t('readMore')}
               <svg
                 className="relative -top-0 right-0 w-12 h-12 p-4 border border-white/[0.05] rounded-[50%]"
@@ -382,19 +382,24 @@ function Works() {
 function SimpleCard() {
   const { t } = useTranslation();
   return (
-   <div className="mt-8 flex h-full flex-1 justify-end items-center w-full md:mr-20 ">
+   <div className="mt-8 h-full flex-1 justify-end items-center w-full md:mr-20 ">
     <div className="md:w-[100vw] w-full relative gifanimasyon  h-screen  bg-auto max-sm:mx-auto max-sm:w-96 max-sm:h-96 " >
       
         
       
        
-      <div className='mx-auto text-center mt-96 '>
-      <button className="px-5 py-2 rounded-md md:mt-96 mt-4 transition duration-300 ease-in-out hover:bg-white hover:text-zinc-800 border inline-block border-gray-400  ">
+      
+      
+      </div>
+      <div className='mx-auto text-center mt-5 '>
+      <button className="px-5 py-2 rounded-md  transition duration-300 ease-in-out hover:bg-white hover:text-zinc-800 border inline-block border-gray-400  ">
           <Link to="https://www.youtube.com/@euroturk-tv" target='blank'>{t('newsButton1')}</Link>
         </button>
       </div>
-      </div>
+
+     
     </div>
+    
   );
 }
 
