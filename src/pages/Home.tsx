@@ -82,7 +82,7 @@ function Hero() {
             {t('heroInfo')}
             
           </motion.p>
-          <button className="relative z-40  mt-6 ml-14  px-14 py-2 rounded-3xl border transition duration-300 ease-in-out hover:bg-white hover:text-zinc-800  inline-block border-gray-400">
+          <button className="relative z-40  mt-6 md:ml-14  px-14 py-2 rounded-3xl border transition duration-300 ease-in-out hover:bg-white hover:text-zinc-800  inline-block border-gray-400 ">
           <Link to="/Contact"> {t('heroContact')}</Link>
         </button>
      </div>
@@ -110,7 +110,7 @@ function Benefits() {
   const { t } = useTranslation();
   return (
 
-    <section className="max-w-7xl mx-auto px-4 md:flex pt-[120px]">
+    <section className="max-w-7xl mx-auto px-4 md:flex pt-[120px] items-center">
      
       <div className="basis-1/2 mb-7 md:mb-0">
       
@@ -124,10 +124,10 @@ function Benefits() {
         <p className="text-base font-light text-gray-300">
          {t('benefitComment')}
         </p>
-
+{/* 
         <button className="px-5 py-2 rounded-md mt-5 transition duration-300 ease-in-out hover:bg-white hover:text-zinc-800 border inline-block border-gray-400">
           <Link to="#">{t('newsButton')}</Link>
-        </button>
+        </button> */}
       </div>
     </section>
   );
@@ -180,26 +180,18 @@ function OurServices() {
   return (
     <section className="max-w-7xl mx-auto px-4">
       <div className="md:flex pt-[120px] mb-[80px]">
-        <div className="flex-1">
-          <h6 className="py-2 px-14 text-xs uppercase tracking-[1px] rounded-3xl border inline-block border-gray-400 mb-4">
+        <div className="flex-1 pt-10 mt-5">
+          <h6 className="py-2 px-14  text-xs uppercase tracking-[1px] rounded-3xl border inline-block border-gray-400 mb-4">
             {t('ourservicesTitle')}
           </h6>
         </div>
 
-        <div className="basis-1/3 mx-auto">
-          <p className="text-base font-light text-gray-300">
-            
-          </p>
-
-          <button className="px-5 py-2 rounded-md mt-5 transition duration-300 ease-in-out border inline-block border-gray-400 hover:bg-white hover:text-zinc-800">
-            <Link to="#">{t('newsButton')}</Link>
-          </button>
-        </div>
+      
       </div>
 
-      <div className="grid grid-cols-3  gap-9 justify-center items-center min-w-max  max-sm:grid-cols-1 " >
+      <div className="grid grid-cols-3  gap-9 justify-center items-center min-w-max max-sm:grid-cols-1 " >
         {/* CARD 1 */}
-        <div className="max-w-md max-sm:max-w-md  flex-1 items-start border border-white/[0.1] md:p-14 p-8   ">
+        <div className=" flex-1 items-start border border-white/[0.1] md:p-14 p-8   ">
           <div className="w-12 mb-10">
             <img src="/images/0.png" alt="" className="w-full h-full object-cover align-middle" />
           </div>
@@ -210,13 +202,13 @@ function OurServices() {
           In cooperation with renown Artist and technicians we develop your Ideas in the highest quality possible. We create Content and Interface for your Brand and market them accordingly for the highest revenue gain.
           </p>
 
-          <div className=''>
+          <div className='min-w-max'>
             <Link
               to='/services'
-              className="w-full py-1 pl-8 border border-white/[0.05] rounded-[30px] transition duration-300 ease-in-out relative mt-8 uppercase text-xs tracking-wider inline-block no-underline hover:bg-white hover:text-zinc-800 max-sm:mx-auto">
+              className="w-full py-4 pl-8 border border-white/[0.05] rounded-[30px] transition duration-300 ease-in-out relative mt-8 uppercase text-xs tracking-wider inline-block no-underline hover:bg-white hover:text-zinc-800 max-sm:mx-auto">
               {t('readMore')}
               <svg
-                className="relative inline-block -top-0 right-0 w-12 h-12 p-4 border border-white/[0.05] rounded-[50%] ml-32 max-sm:ml-56 "
+                className=" inline-block -top-0  w-12 h-12 p-4 border border-white/[0.05] rounded-[50%] right-0 absolute "
                 width="18"
                 height="18"
                 viewBox="0 0 18 18"
@@ -242,13 +234,13 @@ function OurServices() {
           In cooperation with renown Artist and technicians we develop your Ideas in the highest quality possible. We create Content and Interface for your Brand and market them accordingly for the highest revenue gain.
           </p>
 
-          <div className='flex'>
+          <div className='min-w-max'>
           <Link
               to='/services'
-              className="w-full py-1 pl-8 border border-white/[0.05] rounded-[30px] transition duration-300 ease-in-out relative mt-8 uppercase text-xs tracking-wider inline-block no-underline hover:bg-white hover:text-zinc-800 max-sm:mx-auto  ">
+              className="w-full py-4 pl-8 border border-white/[0.05] rounded-[30px] transition duration-300 ease-in-out relative mt-8 uppercase text-xs tracking-wider inline-block no-underline hover:bg-white hover:text-zinc-800 max-sm:mx-auto  ">
               {t('readMore')}
               <svg
-                className="relative inline-block -top-0 right-0 w-12 h-12 p-4 border border-white/[0.05] rounded-[50%] ml-36  max-sm:ml-56 "
+                className="inline-block -top-0  w-12 h-12 p-4 border border-white/[0.05] rounded-[50%] right-0 absolute "
                 width="18"
                 height="18"
                 viewBox="0 0 18 18"
@@ -274,13 +266,13 @@ function OurServices() {
           In cooperation with renown Artist and technicians we develop your Ideas in the highest quality possible. We create Content and Interface for your Brand and market them accordingly for the highest revenue gain.
           </p>
 
-          <div>
+          <div className='min-w-max'>
           <Link
               to='/services'
-              className="w-full py-1 pl-8 border border-white/[0.05] rounded-[30px] transition duration-300 ease-in-out relative mt-8 uppercase text-xs tracking-wider inline-block no-underline hover:bg-white hover:text-zinc-800 max-sm:mx-auto">
+              className="w-full py-4 pl-8 border border-white/[0.05] rounded-[30px] transition duration-300 ease-in-out relative mt-8 uppercase text-xs tracking-wider inline-block no-underline hover:bg-white hover:text-zinc-800 max-sm:mx-auto">
               {t('readMore')}
               <svg
-                className="relative inline-block -top-0 right-0 w-12 h-12 p-4 border border-white/[0.05] rounded-[50%] ml-32 max-sm:ml-56  "
+                className="inline-block -top-0  w-12 h-12 p-4 border border-white/[0.05] rounded-[50%] right-0 absolute  "
                 width="18"
                 height="18"
                 viewBox="0 0 18 18"
@@ -307,13 +299,13 @@ function OurServices() {
 Without a Market a Brand can not survive no matter how good it is. Our Mission is to enhance your Marketing value through direct Communication and targeted (Audience?)
           </p>
 
-          <div>
+          <div className='min-w-max'>
           <Link
               to='/services'
-              className="w-full py-1 pl-8 border border-white/[0.05] rounded-[30px] transition duration-300 ease-in-out relative mt-8 uppercase text-xs tracking-wider inline-block no-underline hover:bg-white hover:text-zinc-800 max-sm:mx-auto">
+              className="w-full py-4 pl-8 border border-white/[0.05] rounded-[30px] transition duration-300 ease-in-out relative mt-8 uppercase text-xs tracking-wider inline-block no-underline hover:bg-white hover:text-zinc-800 max-sm:mx-auto">
               {t('readMore')}
               <svg
-                className="relative inline-block -top-0 right-0 w-12 h-12 p-4 border border-white/[0.05] rounded-[50%]  ml-32 max-sm:ml-56 "
+                className="inline-block -top-0  w-12 h-12 p-4 border border-white/[0.05] rounded-[50%] right-0 absolute"
                 width="18"
                 height="18"
                 viewBox="0 0 18 18"
@@ -338,13 +330,13 @@ Without a Market a Brand can not survive no matter how good it is. Our Mission i
           Is there something you need that is more special? Contact us we will make sure to deliver the highest Quality.
           </p>
 
-          <div>
+          <div className='min-w-max'>
           <Link
               to='/services'
-              className="w-full py-1 pl-8 border border-white/[0.05] rounded-[30px] transition duration-300 ease-in-out relative mt-8 uppercase text-xs tracking-wider inline-block no-underline hover:bg-white hover:text-zinc-800 max-sm:mx-auto">
+              className="w-full py-4 pl-8 border border-white/[0.05] rounded-[30px] transition duration-300 ease-in-out relative mt-8 uppercase text-xs tracking-wider inline-block no-underline hover:bg-white hover:text-zinc-800 max-sm:mx-auto">
               {t('readMore')}
               <svg
-                className="relative inline-block -top-0 right-0 w-12 h-12 p-4 border border-white/[0.05] rounded-[50%] ml-32 max-sm:ml-56 "
+                className="inline-block -top-0  w-12 h-12 p-4 border border-white/[0.05] rounded-[50%] right-0 absolute"
                 width="18"
                 height="18"
                 viewBox="0 0 18 18"
@@ -391,7 +383,7 @@ function SimpleCard() {
       
       
       </div>
-      <div className='mx-auto text-center mt-5 '>
+      <div className='mx-auto md:text-center mt-5 max-sm:ml-5 relative'>
       <button className="px-5 py-2 rounded-md  transition duration-300 ease-in-out hover:bg-white hover:text-zinc-800 border inline-block border-gray-400  ">
           <Link to="https://www.youtube.com/@euroturk-tv" target='blank'>{t('newsButton1')}</Link>
         </button>
@@ -457,8 +449,8 @@ function PeopleSay() {
   return (
     <section className="py-[120px] md:flex mx-auto  mt-5 bg-[#1a1a1a]">
       <div className="max-w-7xl mx-auto px-4">
-        <div className="text-center mb-20">
-          <h6 className="py-2 px-14 text-xs uppercase tracking-[1px] rounded-3xl border inline-block border-gray-400 mb-4">
+        <div className="md:text-center mb-20 ">
+          <h6 className="py-2 px-14 text-xs uppercase tracking-[1px] rounded-3xl border inline-block border-gray-400 mb-4 ">
             {t('testimional')}
           </h6>
           <h2 className="text-5xl font-semibold">{t('testimionalTitle')}</h2>
