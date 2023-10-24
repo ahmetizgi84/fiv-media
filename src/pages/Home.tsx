@@ -93,7 +93,7 @@ function Hero() {
         </motion.div>
       </div>
 
-      <div className="absolute left-0 top-0 -z-1 w-full h-full bg-[url('assets/graph.png')] bg-cover bg-no-repeat" />
+      <div className="absolute left-0 top-0 -z-1 w-full h-full bg-[url('assets/graph.png')]  bg-cover bg-no-repeat" />
 
       {/* <div className=" mt-5 left-20 absolute ml-2">
         <button className="ml-14  px-14 py-2 rounded-3xl border transition duration-300 ease-in-out hover:bg-white hover:text-zinc-800 border inline-block border-gray-400">
@@ -110,25 +110,35 @@ function Benefits() {
   const { t } = useTranslation();
   return (
 
-    <section className="max-w-7xl mx-auto px-4 md:flex pt-[120px] items-center">
+    <section className="max-w-7xl mx-auto px-4 md:flex pt-[120px] items-center ">
      
-      <div className="basis-1/2 mb-7 md:mb-0">
+      <div className="basis-1/2 mb-7   ">
       
+
         <h6 className="py-2 px-14 text-xs uppercase tracking-[1px] rounded-3xl border inline-block border-gray-400 mb-4">
           {t('benefitTitle')}
         </h6>
+        
         <h2 className="md:text-5xl text-[28px] font-semibold">{t('benefitInfo')}</h2>
+
+        
       </div>
 
-      <div className="basis-1/3 mx-auto">
+      
+      <div className="basis-1/3 mx-auto md:mt-5 ">
         <p className="text-base font-light text-gray-300">
          {t('benefitComment')}
-        </p>
-{/* 
-        <button className="px-5 py-2 rounded-md mt-5 transition duration-300 ease-in-out hover:bg-white hover:text-zinc-800 border inline-block border-gray-400">
-          <Link to="#">{t('newsButton')}</Link>
-        </button> */}
+         </p>
+         
+         <div className='hidden max-sm:flex benefitimg h-64 mt-32 '>
+     
+     </div>
+
+
+      
       </div>
+
+      
     </section>
   );
 }
@@ -178,7 +188,7 @@ function Benefits() {
 function OurServices() {
  const { t } = useTranslation();
   return (
-    <section className="max-w-7xl mx-auto px-4">
+    <section className="max-w-7xl mx-auto px-4 ">
       <div className="md:flex pt-[120px] mb-[80px]">
         <div className="flex-1 pt-10 mt-5">
           <h6 className="py-2 px-14  text-xs uppercase tracking-[1px] rounded-3xl border inline-block border-gray-400 mb-4">
@@ -189,7 +199,7 @@ function OurServices() {
       
       </div>
 
-      <div className="grid grid-cols-3  gap-9 justify-center items-center min-w-max max-sm:grid-cols-1 " >
+      <div className="grid grid-cols-3  gap-9 justify-center items-center min-w-max max-sm:grid-cols-1 max-md:grid-cols-2 " >
         {/* CARD 1 */}
         <div className=" flex-1 items-start border border-white/[0.1] md:p-14 p-8   ">
           <div className="w-12 mb-10">
@@ -361,7 +371,7 @@ Without a Market a Brand can not survive no matter how good it is. Our Mission i
 function Works() {
   
   return (
-    <section className="pt-[120px]">
+    <section className="pt-[120px] ">
      
       <SimpleCard />
       
@@ -374,7 +384,7 @@ function Works() {
 function SimpleCard() {
   const { t } = useTranslation();
   return (
-   <div className="mt-8 h-full flex-1 justify-end items-center w-full md:mr-20 ">
+   <div className="mt-8 h-full flex-1 justify-end items-center w-full md:mr-20  ">
     <div className="md:w-[100vw] w-full relative gifanimasyon  h-screen  bg-auto max-sm:mx-auto max-sm:w-84 max-sm:h-96 " >
       
         
@@ -526,7 +536,7 @@ function PeopleSay() {
 
 function TestimonialCard({ test }: { test: any }) {
   return (
-    <div>
+    <div >
       <div className="mb-10">
         <div className="mb-5 text-base">
           <span className="flex gap-1">
@@ -559,7 +569,7 @@ function TestimonialCard({ test }: { test: any }) {
 function MarqueText() {
  
   return (
-    <section className='mb-36 relative'>
+    <section className='mb-36 relative '>
       <div className="border border-white/[0.1] -rotate-3 py-[50px] w-[110%] -ml-5 bg-[#1d1d1d]   absolute  top-full ">
         <Marquee>
           {solutions.map(solution => (

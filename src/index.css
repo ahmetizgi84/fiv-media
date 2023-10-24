@@ -30,3 +30,7 @@ body {
     background-size: cover;
 }
 
+.benefitimg{
+    background-image: url("./assets/teknoloji.jpg");
+    background-size: cover;
+}
