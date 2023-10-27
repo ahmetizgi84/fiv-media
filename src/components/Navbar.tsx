@@ -13,7 +13,7 @@ const Navbar = () => {
   const handleClick = () => setNav(!nav);
 
   return (
-    <div className="shadow-md w-full sticky top-0 left-0 right-0 z-50 bg-[#1d1d1d]">
+    <div className="shadow-md w-full sticky top-0 left-0 right-0 z-50 bg-[#1d1d1d]  homesection">
       <div className="max-w-7xl mx-auto px-4">
         <div className="flex justify-between items-center py-6">
           <Link to="/">
@@ -43,7 +43,7 @@ const Navbar = () => {
 
      
      
-     <div className={
+      <div className={
           !nav
             ? "hidden "
             : "absolute top-0 left-0 w-full h-96 bg-[#1d1d1d] flex flex-col  justify-center items-center  "
@@ -74,7 +74,7 @@ const Navbar = () => {
           </div>
           </div>
 
-     </div>
+     </div> 
       
     
 

@@ -34,3 +34,39 @@ body {
     background-image: url("./assets/teknoloji.jpg");
     background-size: cover;
 }
+
+
+@keyframes transitionIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px); }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+} 
+
+.homesection {
+    animation: transitionIn 1s;
+    
+}
+
+@keyframes rotate {
+    0% {
+        box-shadow: 0 0 10px rgba(161, 161, 170, 0.7); /* Başlangıçta parlaklık yüksek */
+    }
+    100% {
+        box-shadow: 0 0 20px rgba(161, 161, 170, 0); /* Sonunda parlaklık düşük */
+    }
+}
+
+.rotate-button {
+    border: 2px solid rgb(161 161 170); /* Border rengi ve kalınlığı */
+    animation: rotate 1s infinite alternate;
+}
+
+
+
+
+
+

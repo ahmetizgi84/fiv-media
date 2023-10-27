@@ -40,11 +40,13 @@ const Home = () => {
       <Hero />
       <Benefits />
       {/* <Revenue /> */}
+     
       <OurServices />
+      <MarqueText />
       <Works />
       {/* <Services /> */}
       <PeopleSay />
-      <MarqueText />
+      
       <FooterTop />
     </>
   );
@@ -63,7 +65,7 @@ function Hero() {
       animate="visible"
       exit={{ opacity: 0, transition: { duration: 1 } }}
       variants={{ visible: { transition: { staggerChildren: 0.3 } } }}
-      className="relative pt-32">
+      className="relative pt-32 homesection ">
       <div className="max-w-7xl mx-auto px-4">
         <motion.h1
           variants={{
@@ -82,7 +84,7 @@ function Hero() {
             {t('heroInfo')}
             
           </motion.p>
-          <button className="relative z-40  mt-6 md:ml-14  px-14 py-2 rounded-3xl border transition duration-300 ease-in-out hover:bg-white hover:text-zinc-800  inline-block border-gray-400 ">
+          <button className="rotate-button relative z-40  mt-6 md:ml-14  px-14 py-2 rounded-3xl border transition duration-300 ease-in-out hover:bg-white hover:text-zinc-800  inline-block border-gray-400 ">
           <Link to="/Contact"> {t('heroContact')}</Link>
         </button>
      </div>
@@ -110,7 +112,7 @@ function Benefits() {
   const { t } = useTranslation();
   return (
 
-    <section className="max-w-7xl mx-auto px-4 md:flex pt-[120px] items-center ">
+    <section className="  max-w-7xl mx-auto px-4 md:flex pt-[120px] items-center ">
      
       <div className="basis-1/2 mb-7   ">
       
@@ -143,7 +145,51 @@ function Benefits() {
   );
 }
 
-/* function Revenue() {
+
+function MarqueText() {
+ 
+  return (
+    <section className='relative   mb-24'>
+      <div className="border border-white/[0.1] -rotate-3 py-[50px] w-[110%] -ml-5 bg-[#1d1d1d]   absolute  top-full ">
+        <Marquee>
+          {solutions.map(solution => (
+            <div className="px-8" key={solution}>
+              <h4 className="flex items-center md:text-7xl text-4xl font-semibold">
+                <span>{solution}</span>
+                <span className="ml-[50px] text-5xl">*</span>
+              </h4>
+            </div>
+          ))}
+        </Marquee>
+      </div>
+
+      <div className='border relative top-72 border-white/[0.1] bg-[#1d1d1d] flex flex-col sm:flex-row sm:pt-8 sm:pb-8 mx-auto text-center'>
+      <Marquee>
+  <ul className='flex sm:flex-row text-center mx-auto sm:gap-24 gap-16'>
+    <li className='mb-4 sm:mb-0'>
+      <a href="https://hellonahome.de/" className='text-2xl sm:text-4xl transition duration-300 ease-in-out relative mt-8 uppercase tracking-wider inline-block no-underline hover:text-zinc-300'>
+        HELLONA HOME
+      </a>
+    </li>
+    <li>
+      <a href="http://hellonatoys.de" className='text-2xl sm:text-4xl transition duration-300 ease-in-out relative mt-8 uppercase tracking-wider inline-block no-underline hover:text-zinc-300'>
+        HELLONA TOYS
+      </a>
+    </li>
+  </ul>
+  </Marquee>
+</div>
+
+
+
+      
+     </section>
+  );
+} 
+
+
+
+ /* function Revenue() {
   return (
     <section className="max-w-7xl mx-auto px-4 md:flex py-[120px]">
       <div className="basis-1/2 mx-auto mb-12 md:mb-0">
@@ -182,14 +228,14 @@ function Benefits() {
       </div>
     </section>
   );
-}
- */
+} */
+ 
  
 function OurServices() {
  const { t } = useTranslation();
   return (
-    <section className="max-w-7xl mx-auto px-4 ">
-      <div className="md:flex pt-[120px] mb-[80px]">
+    <section className="max-w-7xl mx-auto px-4  relative   ">
+      <div className="md:flex pt-[120px] mb-[80px]  ">
         <div className="flex-1 pt-10 mt-5">
           <h6 className="py-2 px-14  text-xs uppercase tracking-[1px] rounded-3xl border inline-block border-gray-400 mb-4">
             {t('ourservicesTitle')}
@@ -215,7 +261,7 @@ function OurServices() {
           <div className='min-w-max'>
             <Link
               to='/services'
-              className="w-full py-4 pl-8 border border-white/[0.05] rounded-[30px] transition duration-300 ease-in-out relative mt-8 uppercase text-xs tracking-wider inline-block no-underline hover:bg-white hover:text-zinc-800 max-sm:mx-auto">
+              className=" w-full py-4 pl-8 border border-white/[0.05] rounded-[30px] transition duration-300 ease-in-out relative mt-8 uppercase text-xs tracking-wider inline-block no-underline hover:bg-white hover:text-zinc-800 max-sm:mx-auto">
               {t('readMore')}
               <svg
                 className=" inline-block -top-0  w-12 h-12 p-4 border border-white/[0.05] rounded-[50%] right-0 absolute "
@@ -229,6 +275,7 @@ function OurServices() {
                   fill="currentColor"></path>
               </svg>
               </Link>
+              
           </div>
         </div>
 
@@ -384,8 +431,8 @@ function Works() {
 function SimpleCard() {
   const { t } = useTranslation();
   return (
-   <div className="mt-8 h-full flex-1 justify-end items-center w-full md:mr-20  ">
-    <div className="md:w-[100vw] w-full relative gifanimasyon  h-screen  bg-auto max-sm:mx-auto max-sm:w-84 max-sm:h-96 " >
+   <div className="mt-8 h-full flex-1 justify-end items-center w-full md:mr-20 md:mt-24 md:mb-24 max-sm:mt-36 ">
+    <div className="md:w-screen w-full relative gifanimasyon  h-screen  bg-auto max-sm:mx-auto max-sm:w-96 max-sm:h-96   " >
       
         
       
@@ -393,8 +440,8 @@ function SimpleCard() {
       
       
       </div>
-      <div className='mx-auto md:text-center mt-5 max-sm:ml-5 relative'>
-      <button className="px-5 py-2 rounded-md  transition duration-300 ease-in-out hover:bg-white hover:text-zinc-800 border inline-block border-gray-400  ">
+      <div className='mx-auto md:text-center mt-5 max-sm:ml-10 relative '>
+      <button className="px-5 rotate-button py-2 rounded-md  transition duration-300 ease-in-out hover:bg-white hover:text-zinc-800 border inline-block border-gray-400  ">
           <Link to="https://www.youtube.com/@euroturk-tv" target='blank'>{t('newsButton1')}</Link>
         </button>
       </div>
@@ -566,7 +613,7 @@ function TestimonialCard({ test }: { test: any }) {
   );
 }
 
-function MarqueText() {
+/* function MarqueText() {
  
   return (
     <section className='mb-36 relative '>
@@ -583,18 +630,10 @@ function MarqueText() {
         </Marquee>
       </div>
 
-       {/* <div className="border border-white/[0.1] py-[70px] w-[110%] -ml-5">
-        <div className="max-w-7xl mx-auto px-4 flex justify-evenly">
-          <h2>HUQS</h2>
-          <h2>WASP</h2>
-          <h2>TRIDOS</h2>
-          <h2>TRUFFLE</h2>
-          <h2>GNOSIS</h2>
-        </div>
-      </div>  */}
+      
      </section>
   );
-} 
+}  */
 
 
 function FooterTop() {
