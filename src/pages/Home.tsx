@@ -6,6 +6,12 @@ import { ArrowRightShort } from 'react-bootstrap-icons';
 import { useTranslation } from 'react-i18next';
 import { StarFill } from 'react-bootstrap-icons';
 import {  secondSettings, solutions, testimonials } from '@/constants';
+import { useState, useEffect } from 'react';
+
+
+
+
+
 
 
 // import { useTranslation } from 'react-i18next';
@@ -37,6 +43,7 @@ const itemVariants: Variants = {
 const Home = () => {
   return (
     <>
+    <PreLoader />
       <Hero />
       <Benefits />
       {/* <Revenue /> */}
@@ -54,7 +61,60 @@ const Home = () => {
 
 export default Home;
 
+function PreLoader() {
+  const [showLoader, setShowLoader] = useState(true);
 
+  useEffect(() => {
+    setTimeout(() => {
+      setShowLoader(false);
+    }, 3000); 
+  }, []);
+
+  return (
+    <div
+    className="preloader"
+    style={{
+      height: '100vh',
+      width: '100%',
+      background: showLoader ? 'black' : 'black',
+      position: 'fixed',
+      bottom: 0,
+      left: 0,
+      right: 0,
+      zIndex: showLoader ? 50 : -100 ,
+      display: 'flex',
+      alignItems: 'center',
+      justifyContent: 'center',
+      color: showLoader ? 'white' : 'black',
+      overflow: 'hidden !important',
+      opacity: showLoader ? 1 : 0, // Loader kaybolunca opaklık 0 olacak
+      transition: 'opacity 1s ease-in-out', // Geçiş efekti ekledik
+    }}
+  >
+    {showLoader ? (
+      <div
+        className="texts-container"
+        style={{
+          letterSpacing: '10px' ,
+          textAlign: 'center',
+          display: 'flex',
+          alignItems: 'center',
+          justifyContent: 'space-between',
+          height: '60px',
+          width: '280px',
+          fontSize: '40px',
+          overflow: 'hidden',
+          fontWeight: 200,
+          animation: showLoader ? 'fadeInUp 2s forwards' : 'fadeOutUp 2s forwards', // Animasyon eklendi
+        }}
+      >
+        Loading...
+
+      </div>
+    ) : null}
+  </div>
+  );
+}
 
 function Hero() {
   const { t } = useTranslation();
